@@ -1,4 +1,4 @@
-@use "../Sidebar/sidebar.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
 
 .sidebar {
 	display: flex;
