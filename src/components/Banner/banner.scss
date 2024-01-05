@@ -1,1 +1,20 @@
 @use "../../styles/partials/mixins.scss" as *;
+
+.banner {
+	&__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 500px;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&__text {
+		text-align: center;
+		font-size: 4rem;
+		color: white;
+		text-shadow: 0 0 10px black;
+	}
+}
