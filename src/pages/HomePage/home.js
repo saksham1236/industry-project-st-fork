@@ -1,11 +1,10 @@
-import './home.scss';
-
+import "./home.scss";
+import Sidebar from "../../components/Sidebar/Sidebar";
 
 export default function Home() {
-
-    return (
-        <>
-        
-        </>
-    )
+	return (
+		<>
+			<Sidebar />
+		</>
+	);
 }
