@@ -19,9 +19,6 @@ function Tile({ title, image, desc }) {
 			<div className="tile__btm">
 				<div className="tile__title">{title}</div>
 				<div className="tile__description">{descPreview}</div>
-				<div className="tile__buttons">
-					<button>read more</button>
-				</div>
 			</div>
 		</div>
 	);
