@@ -1,0 +1,24 @@
+// removing/replacing default styling
+* {
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+
+	&:visited,
+	&:link {
+		color: inherit;
+	}
+}
+
+textarea {
+	overflow: hidden;
+	resize: none;
+}
