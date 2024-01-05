@@ -1,5 +1,7 @@
 import "./home.scss";
 import Tile from "../../components/Tile/Tile";
+import Banner from "../../components/Banner/Banner";
+import background from "../../assets/MountainValley-SamuelEarp-oilpainting.jpg";
 
 export default function Home() {
 	const dummyData = [
@@ -26,6 +28,7 @@ export default function Home() {
 	return (
 		<>
 			home page
+			<Banner imgURl={background} Text={dummyData[1].title} />
 			{dummyData.map((data) => {
 				return (
 					<Tile image={data.image} title={data.title} desc={data.description} />
