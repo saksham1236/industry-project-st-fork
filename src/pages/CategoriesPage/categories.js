@@ -1,4 +1,6 @@
-import "./categories.scss";
+import './categories.scss';
+
+
 export default function Categories() {
 	return <></>;
 }
