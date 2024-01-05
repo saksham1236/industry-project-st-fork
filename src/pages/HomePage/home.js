@@ -1,5 +1,4 @@
 import "./home.scss";
-import Sidebar from "../../components/Sidebar/Sidebar";
 import Tile from "../../components/Tile/Tile";
 
 export default function Home() {
@@ -23,12 +22,13 @@ export default function Home() {
 				"Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
 		},
 	];
+
 	return (
 		<>
-			{/* <Sidebar /> */}
+			home page
 			{dummyData.map((data) => {
 				return (
-					<Tile title={data.title} image={data.image} desc={data.description} />
+					<Tile image={data.image} title={data.title} desc={data.description} />
 				);
 			})}
 		</>

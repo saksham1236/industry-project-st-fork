@@ -3,11 +3,11 @@
 .tile {
 	display: flex;
 	flex-direction: column;
-	border-radius: 12px;
+	border-radius: 0.75rem;
 	background-color: lightgrey;
 	width: 100%;
 	border: 1px solid grey;
-	margin: 16px 0px;
+	margin: 1rem 0rem;
 
 	@include tablet {
 		width: 40%;
@@ -24,25 +24,31 @@
 
 	&__image {
 		object-fit: cover;
-		border-radius: 12px 12px 0px 0px;
+		border-radius: 0.75rem 0.75rem 0rem 0rem;
 		width: 100%;
 	}
 
 	&__btm {
 		display: flex;
 		flex-direction: column;
-		padding: 16px;
+		padding: 1rem;
 		height: 50%;
-		gap: 32px;
+		gap: 1rem;
 	}
 
 	&__title {
-		font-size: 16px;
-		font-weight: 400;
+		@include m-p1;
+
+		@include tablet {
+			@include d-p1;
+		}
 	}
 
 	&__description {
-		font-size: 14px;
-		font-weight: 400;
+		@include m-p2;
+
+		@include tablet {
+			@include d-p2;
+		}
 	}
 }
