@@ -1,6 +1,5 @@
 import "./home.scss";
 import Tile from "../../components/Tile/Tile";
-import Navbar from "../../components/Navbar/Navbar";
 
 export default function Home() {
 	const dummyData = [
