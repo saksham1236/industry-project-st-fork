@@ -1,79 +1,142 @@
 import "./Navbar.scss";
-import logoIcon from "../../assets/logo/icons8-recycle.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
+import SplineLogo from "../splineView/SplineView";
 import categoryIcon from "../../assets/icons/category_FILL0_wght400_GRAD0_opsz24.svg";
 import resourceIcon from "../../assets/icons/crowdsource_FILL0_wght400_GRAD0_opsz24.svg";
 import aboutIcon from "../../assets/icons/help_FILL0_wght400_GRAD0_opsz24.svg";
 import searchIcon from "../../assets/icons/search_FILL0_wght400_GRAD0_opsz24.svg";
 import { ReactSVG } from "react-svg";
+import Sidebar from "../Sidebar/Sidebar";
+
 export default function Navbar(props) {
 	const { links } = props;
 
-	const [query, setQuery] = useState();
+	const [query, setQuery] = useState("");
+
+	const updateQuery = (e) => {
+		const text = e.target.value;
+		setQuery(text);
+		console.log(text);
+	};
 
 	const searchFormHandler = (e) => {
 		e.preventDefault();
 		e.stopPropagation();
-        alert(query);
+		alert(query);
 	};
 
 	return (
 		<nav>
-			<div className='nav__logo'>
-				<div className='nav__logo__image'>
-					<img
-						src={logoIcon}
-						alt='Re-cycle Logo'></img>
-				</div>
-				<div className='nav__logo__text'>
-					<h1>RE-cycle</h1>
-				</div>
-			</div>
-
-			<div className='nav__search'>
-				<search>
-					<form onSubmit={searchFormHandler}>
-						<div className='nav__search__container'>
-							<div className='nav__search__icon'>
-                                <ReactSVG src = {searchIcon} />
-							</div>
-							<input
-                                id = "searchInput"
-								className='nav__search__input'
-								type='text'
-								placeholder='Search'
-                                onChange={setQuery}></input>
+			<div className='nav-big'>
+				<Link to='/'>
+					<div className='nav__logo'>
+						<div className='nav__logo__image'>
+							<SplineLogo />
 						</div>
-					</form>
-				</search>
+						<div className='nav__logo__text'>
+							<h1>RE-cycle</h1>
+						</div>
+					</div>
+				</Link>
+
+				<div className='nav__search'>
+					<search>
+						<form onSubmit={searchFormHandler}>
+							<div className='nav__search__container'>
+								<div className='nav__search__icon'>
+									<ReactSVG
+										className='nav__search__icon__inner'
+										src={searchIcon}
+									/>
+								</div>
+								<input
+									id='searchInput'
+									className='nav__search__input'
+									type='text'
+									placeholder='Search'
+									onChange={updateQuery}></input>
+							</div>
+						</form>
+					</search>
+				</div>
+
+				<div className='nav__links'>
+					<ul className='nav__links__list'>
+						<li>
+							<Button
+								label='Categories'
+								link='/categories'
+								icon={categoryIcon}
+							/>
+						</li>
+						<li>
+							<Button
+								label='Resources'
+								link='/resources'
+								icon={resourceIcon}
+							/>
+						</li>
+						<li>
+							<Button
+								label='About'
+								link='/about'
+								icon={aboutIcon}
+							/>
+						</li>
+					</ul>
+				</div>
 			</div>
 
-			<div className='nav__links'>
-				<ul className='nav__links__list'>
-					<li>
-						<Button
-							label='Categories'
-							link='/categories'
-							icon={categoryIcon}
-						/>
-					</li>
-					<li>
-						<Button
-							label='Resources'
-							link='/resources'
-							icon={resourceIcon}
-						/>
-					</li>
-					<li>
-						<Button
-							label='About'
-							link='/about'
-							icon={aboutIcon}
-						/>
-					</li>
-				</ul>
+			<div className='nav-mobile'>
+				<Sidebar>
+					<div className='nav__search'>
+						<search>
+							<form onSubmit={searchFormHandler}>
+								<div className='nav__search__container'>
+									<div className='nav__search__icon'>
+										<ReactSVG
+											className='nav__search__icon__inner'
+											src={searchIcon}
+										/>
+									</div>
+									<input
+										id='searchInput-mobile'
+										className='nav__search__input'
+										type='text'
+										placeholder='Search'
+										onChange={updateQuery}></input>
+								</div>
+							</form>
+						</search>
+					</div>
+					<div className='nav__links'>
+						<ul className='nav__links__list'>
+							<li>
+								<Button
+									label='Categories'
+									link='/categories'
+									icon={categoryIcon}
+								/>
+							</li>
+							<li>
+								<Button
+									label='Resources'
+									link='/resources'
+									icon={resourceIcon}
+								/>
+							</li>
+							<li>
+								<Button
+									label='About'
+									link='/about'
+									icon={aboutIcon}
+								/>
+							</li>
+						</ul>
+					</div>
+				</Sidebar>
 			</div>
 		</nav>
 	);

@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins" as*;
+
 nav,
 .nav {
 	display: flex;
@@ -5,11 +7,25 @@ nav,
 	justify-content: space-between;
 	padding: 1rem 1.5rem;
 	gap: 1rem;
+
+	&-big{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		width: 100%;
+	}
+
+	&-mobile {
+		display: flex;
+		align-items: flex-start;
+	}
+
 	&__logo {
 		display: flex;
 		align-items: center;
         
-		&__image img{
+		&__image {
 			height: 3rem;
 			width: 3rem;
 		}
@@ -38,6 +54,15 @@ nav,
 			border: none;
 			outline: none;
 			background-color: var(--primary-background);
+			width: 12rem;
+		}
+
+		&__icon {
+			display: flex;
+
+			& svg {
+				display: flex;
+			}
 		}
 	}
 }

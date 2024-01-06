@@ -14,6 +14,7 @@ button,
     transition: all 0.3s ease;
     &:hover {
         background-color: var(--primary-background-hover);
+        cursor: pointer;
     }
     & svg {
         display: flex;
@@ -22,5 +23,9 @@ button,
     }
     &-link{
         display: flex;
+    }
+
+    &-icon {
+        padding: 1.125rem;
     }
 }

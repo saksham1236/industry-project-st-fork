@@ -1,6 +1,10 @@
 import { useState } from "react";
 import "./sidebar.scss";
-function Sidebar() {
+import { ReactSVG } from "react-svg";
+import menuIcon from "../../assets/icons/menu_FILL0_wght400_GRAD0_opsz24.svg";
+import closeIcon from "../../assets/icons/close_FILL0_wght400_GRAD0_opsz24.svg"
+import Button from "../Button/Button";
+function Sidebar({ children }) {
 	const categories = [
 		{
 			heading: "Organics",
@@ -29,30 +33,34 @@ function Sidebar() {
 
 	return (
 		<div>
-			<button onClick={showSidebar}>Show sidebar</button>
+			<Button icon = {menuIcon} onClick={showSidebar} />
 			<div className={sidebar ? "sidebar" : "sidebar--inactive"}>
 				<div onClick={showSidebar}>X</div>
-				<div className="sidebar__title">Categories</div>
-				{categories.map((category, index) => {
+					{children}
+				{/* {categories.map((category, index) => {
 					return (
-						<div key={index} className="sidebar__section">
-							<div className="sidebar__heading">{`${category.heading}`}</div>
-							<div className="sidebar__sub-section">
+						<div
+							key={index}
+							className='sidebar__section'>
+							<div className='sidebar__heading'>{`${category.heading}`}</div>
+							<div className='sidebar__sub-section'>
 								{category.subs.map((sub, index) => {
 									return (
 										<div
 											key={index}
-											className="sidebar__sub-heading">{`${sub}`}</div>
+											className='sidebar__sub-heading'>{`${sub}`}</div>
 									);
 								})}
 							</div>
 							<div
 								className={
-									index + 1 < categories.length ? "sidebar__divider" : ""
+									index + 1 < categories.length
+										? "sidebar__divider"
+										: ""
 								}></div>
 						</div>
 					);
-				})}
+				})} */}
 			</div>
 		</div>
 	);

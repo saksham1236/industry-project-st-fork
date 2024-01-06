@@ -8,20 +8,19 @@
 	height: 100vh;
 	padding: 0.75rem;
 	text-align: start;
-	background-color: rgb(177, 241, 177);
-	border-radius: 0px 16px 0px 0px;
+	background-color: var(--secondary-background);
+	border-radius: 24px 0px 0px 0px;
 	position: fixed;
-	left: 0;
-	transition: 850ms;
+	top: 0;
+	right: 0;
+	transition: all 0.6s ease;
 
 	@include tablet {
 		width: 35%;
-		transition: 1.2s;
 	}
 
 	@include desktop {
 		width: 20%;
-		transition: 1s;
 	}
 
 	&__title {
@@ -61,15 +60,15 @@
 
 	&--inactive {
 		@extend .sidebar;
-		left: -100%;
-		transition: 850ms;
+		right: -100%;
+		// transition: 0.4s ease;
 
-		@include tablet {
-			transition: 1.2s;
-		}
+		// @include tablet {
+		// 	transition: 0.3s;
+		// }
 
-		@include desktop {
-			transition: 1s;
-		}
+		// @include desktop {
+		// 	transition: 0.3s;
+		// }
 	}
 }
