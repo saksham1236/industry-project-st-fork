@@ -1,58 +1,81 @@
 import "./categories.scss";
 import testImage from "../../assets/images/batteries.png";
+import CategoryCard from "../../components/CategoryCard/categoryCard";
+
 export default function Categories() {
-	// const cardData = [
-	// 	{
-	// 		image_one:
-	// 		image_two:
-	// 		image_three: ,
-	// 		header: "Liquid",
-	// 		description: "Hazardous waste disposal is essential for preventing environmental and health risks. Proper containment, treatment, and adherence to regulations ensure safe and responsible management of these materials."
-	// 	},
-	// 	{
-	// 		image_one:
-	// 		image_two:
-	// 		image_three: 
-	// 		header: "Hazardous",
-	// 		description:
-	// 	},
-	// 	{
-	// 		image_one:
-	// 		image_two:
-	// 		image_three: 
-	// 		header: "Organic",
-	// 		description:
-	// 	},
-	// 	{
-	// 		image_one:
-	// 		image_two:
-	// 		image_three: 
-	// 		header: "Recyclable",
-	// 		description:
-	// 	},
-	// 	{
-	// 		image_one:
-	// 		image_two:
-	// 		image_three: 
-	// 		header: "Solid",
-	// 		description:
-	// 	},
-	// ]
+  const cardData = [
+    {
+      image_one: { testImage },
+      image_two: { testImage },
+      image_three: { testImage },
+      card_header: "Liquid",
+      image_name: "Batteries",
+	  card_color: "#29a6ff75",
+	  text_color: "#00487b",
+      description:
+        "Liquid waste refers to all grease, oil, sludges, wash water, waste detergents and dirty water that have been thrown away. They are hazardous and poisonous to our environment and are found in industries as well as households. Wastewater, as it is often called, is any waste that exists in liquid form.",
+    },
+    {
+      image_one: { testImage },
+      image_two: { testImage },
+      image_three: { testImage },
+      card_header: "Hazardous",
+      image_name: "Batteries",
+	  card_color: "#fff8e8",
+	  text_color: "#875b0f",
+      description:
+        "Hazardous waste disposal is essential for preventing environmental and health risks. Proper containment, treatment, and adherence to regulations ensure safe and responsible management of these materials.",
+    },
+    {
+      image_one: { testImage },
+      image_two: { testImage },
+      image_three: { testImage },
+      card_header: "Organic",
+      image_name: "Batteries",
+	  card_color: "#60bd6066",
+	  text_color: "#003400",
+      description:
+        "Organic waste refers to rotten meat, garden and food waste. This type of rubbish is commonly found in homes. With time, they decompose and turn into manure by the action of microorganisms on them. But be careful; you should not dispose of them anywhere you like.",
+    },
+    {
+      image_one: { testImage },
+      image_two: { testImage },
+      image_three: { testImage },
+      card_header: "Recyclable",
+      image_name: "Batteries",
+	  card_color: "#2265FF",
+	  text_color: "#002A8C",
+      description:
+        "All discarded items like metals, furniture, organic waste that can be recycled fall under this category. Not all items are recyclable, so you have to be careful when putting things into the recycle bin. If you are not sure whether an item is recyclable or not, then check the item’s packaging.",
+    },
+    {
+      image_one: { testImage },
+      image_two: { testImage },
+      image_three: { testImage },
+      card_header: "Solid",
+      image_name: "Batteries",
+	  card_color: "#cbcaca",
+	  text_color: "#686868",
+      description:
+        "Solid waste is any garbage, sludge, and refuse found in industrial and commercial locations. The five major types of solid rubbish are;",
+    },
+  ];
   return (
     <>
-      <div className="category--card">
-        <h2 className="category__header">Hazardous</h2>
-        <p className="category__description">
-          Hazardous waste includes ble, corrosive, toxic and reactive
-          materials. In a nutshell, they are wastes that pose a significant or
-          potential threat to our environment.
-        </p>
-		<div className="image--container">
-			<div className="category__image"><p className="image__text">Batteries</p></div>
-			<div className="category__image"><p className="image__text">Batteries</p></div>
-			<div className="category__image"><p className="image__text">Batteries</p></div>
-		</div>
-	   </div>
+      {cardData.map((data) => {
+        return (
+          <CategoryCard
+            imageOne={data.image_one}
+            imageTwo={data.image_two}
+            imageThree={data.image_three}
+            cardHeader={data.card_header}
+            imageName={data.image_name}
+            description={data.description}
+			cardColor={data.card_color}
+			textColor={data.text_color}
+          />
+        );
+      })}
     </>
   );
 }
