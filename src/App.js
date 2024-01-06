@@ -4,7 +4,7 @@ import Home from "./pages/HomePage/home";
 import Categories from "./pages/CategoriesPage/categories";
 import Guide from "./pages/GuidePage/GuidePage";
 import Navbar from "./components/Navbar/Navbar";
-
+import SplineView from "./components/splineView/SplineView";
 function App() {
 	return (
 		<>

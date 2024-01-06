@@ -1,6 +1,6 @@
 import "./Button.scss";
 import { Link } from "react-router-dom";
-
+import { ReactSVG } from "react-svg";
 /**
  * Button component
  * 
@@ -15,12 +15,11 @@ export default function Button(props) {
     const {label, icon, iconAlt, link, ...rest} = props;
 
     if(link) {
-        return <Link to = {link} className="button-link"><button className="button" {...rest}>{icon && <img src = {icon} alt = {iconAlt}></img>}{label}</button></Link>
+        return <Link to = {link} className="button-link"><button className="button" {...rest}>{icon && <ReactSVG src = {icon} />}{label}</button></Link>
     }
 
     else {
-        return <button className="button" {...rest}>{icon && <img src = {icon} alt ={iconAlt}></img>}{label}</button>
-
+        return <button className="button" {...rest}>{icon && <ReactSVG src = {icon} />}{label}</button>
     }
 
 }
