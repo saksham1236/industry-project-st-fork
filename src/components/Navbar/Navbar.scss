@@ -1,0 +1,43 @@
+nav,
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 1.5rem;
+	gap: 1rem;
+	&__logo {
+		display: flex;
+		align-items: center;
+        
+		&__image img{
+			height: 3rem;
+			width: 3rem;
+		}
+	}
+
+	&__links {
+		&__list {
+			display: flex;
+			column-gap: 0.5rem;
+		}
+	}
+
+	&__search {
+
+		&__container {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			background-color: var(--primary-background);
+			padding: 0.625rem 1rem;
+			border-radius: 6.25rem;
+		}
+
+		&__input {
+			display: flex;
+			border: none;
+			outline: none;
+			background-color: var(--primary-background);
+		}
+	}
+}
