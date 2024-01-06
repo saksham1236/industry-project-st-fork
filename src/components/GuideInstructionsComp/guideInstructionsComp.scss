@@ -5,7 +5,7 @@
   background-color: rgb(180, 246, 186);
   border-radius: 0.75rem;
 
-  &__do-list {
+  &__list {
     display: flex;
   flex-direction: column;
     padding: 1rem;
@@ -17,11 +17,5 @@
 
   &__image {
     border-radius: 0.75rem;
-  }
-
-  &__dont-list {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
   }
 }

@@ -12,7 +12,7 @@ function GuideInstructionsComp() {
       {Data.filter((data) => data.id === id).map((data) => {
         return (
           <div className="guide-inst">
-            <div className="guide-inst__do-list">
+            <div className="guide-inst__list">
               <h1 className="guide-list__title">DO:</h1>
               <GuideListComponent
                 key={data.id}
@@ -22,7 +22,7 @@ function GuideInstructionsComp() {
             <div className="guide-inst__image-container">
               <img src={data.image} className="guide-inst__image"></img>
             </div>
-            <div className="guide-inst__do-list">
+            <div className="guide-inst__list">
               <h1 className="guide-list__title">DO NOT:</h1>
               <GuideListComponent
                 key={data.id}
