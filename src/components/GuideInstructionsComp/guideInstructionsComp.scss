@@ -6,6 +6,8 @@
   border-radius: 0.75rem;
 
   &__do-list {
+    display: flex;
+  flex-direction: column;
     padding: 1rem;
   }
 
@@ -18,6 +20,8 @@
   }
 
   &__dont-list {
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
   }
 }
