@@ -1,0 +1,16 @@
+@use "../../styles/partials/mixins";
+
+.guide-list {
+  // background-color: green;
+  border-radius: 0.75rem;
+
+  &__title {
+    // padding: 2.25rem 1.5rem 0rem;
+    padding: 0.5rem;
+    // @include d-padding-header;
+  }
+
+  &__list-container {
+    padding: 0 0.5rem 1rem;
+  }
+}
