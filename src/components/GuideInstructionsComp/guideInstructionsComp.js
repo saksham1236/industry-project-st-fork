@@ -1,73 +1,43 @@
 import "./guideInstructionsComp.scss";
-import GuideListComponent from "../GuideListComp/guideListComp"
+import GuideListComponent from "../GuideListComp/guideListComp";
 import Data from "../../data/guides.json";
 import { useParams } from "react-router-dom";
 
 function GuideInstructionsComp() {
-  console.log(Data[0].image);
+	console.log(Data[0].image);
 
-  const { id } = useParams();
+	const { id } = useParams();
 
-  console.log("useParams id: ", id);
+	console.log("useParams id: ", id);
 
-
-  return (
-    <div className="guide-inst">
-      
-        {Data.filter(data => data.id === id)
-          .map(data => {
-            return (
-              <>
-              
-        
-              <div className="guide-inst__do-list">
-              <h1 className="guide-list__title">DO:</h1>
-                <GuideListComponent
-                  key={data.id}
-                  doSteps={data.doSteps}
-                />
-                </div>
-                <div className="guide-inst__image-container">
-                  <img
-                    src={data.image}
-                    alt="product to be disposed of"
-                    className="guide-inst__image">
-                  </img>
-                </div>
-                <div className="guide-inst__dont-list">
-                  <h1 className="guide-list__title">DO NOT:</h1>
-                  {/* {Data.filter(data => data.id === id)
-          .map(data => {
-            return ( */}
-                  <GuideListComponent
-                    key={data.id}
-                    dontSteps={data.dontSteps}
-                  // image={data.image}
-                  // dontSteps={data.dontSteps}
-                  />
-                  {/* ); */}
-                  {/* })} */}
-                </div>
-                
-              </>
-            );
-          })}
-      
-
-
-      {/* <div className="guide-inst__dont-list">
-        <h1 className="guide-list__title">DO NOT:</h1>
-        {Data.filter(data => data.id === id)
-          .map(data => {
-            return (
-        <GuideListComponent
-        key={data.id}
-                doSteps={data.doSteps}
-                />
-            )}
-      </div> */}
-    </div>
-  );
+	return (
+		<div className="guide-inst">
+			<div className="guide-inst__do-list">
+				<h1 className="guide-list__title">DO:</h1>
+				{Data.filter((data) => data.id === id).map((data) => {
+					return (
+						<GuideListComponent
+							key={data.id}
+							steps={data.doSteps}
+							image={data.image}
+						/>
+					);
+				})}
+			</div>
+			<div className="guide-inst__do-list">
+				<h1 className="guide-list__title">DOnt:</h1>
+				{Data.filter((data) => data.id === id).map((data) => {
+					return (
+						<GuideListComponent
+							key={data.id}
+							steps={data.dontSteps}
+							image={data.image}
+						/>
+					);
+				})}
+			</div>
+		</div>
+	);
 }
 
 export default GuideInstructionsComp;
