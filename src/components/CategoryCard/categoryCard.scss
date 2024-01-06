@@ -12,12 +12,10 @@
     @include mobile {
       font-size: 2rem;
       line-height: 2.5rem;
-    //   color: #875b0f;
     }
   }
   .category__description {
     @include mobile {
-    //   color: #875b0f;
       padding-bottom: 2rem;
     }
   }
@@ -25,7 +23,7 @@
     @include mobile {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 3rem;
     align-items: center;
     }
     @include tablet {
@@ -48,6 +46,13 @@
         border-radius: 1.5rem;
         position: relative;
         object-fit: cover;
+        transition: box-shadow 0.6s, transform 0.6s;
+        &:hover {
+          box-shadow: 10px 10px 40px rgb(0, 0, 0, 0.4);
+          transform: scale(1.1);
+          z-index: 1;
+          cursor: pointer;
+        }
     }
   }
     .image__text {
