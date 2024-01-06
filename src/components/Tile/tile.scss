@@ -1,0 +1,54 @@
+@use "../../styles/partials/mixins.scss" as *;
+
+.tile {
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.75rem;
+	background-color: lightgrey;
+	width: 100%;
+	border: 1px solid grey;
+	margin: 1rem 0rem;
+
+	@include tablet {
+		width: 40%;
+	}
+
+	@include desktop {
+		width: 25%;
+	}
+
+	&__top {
+		display: flex;
+		height: 50%;
+	}
+
+	&__image {
+		object-fit: cover;
+		border-radius: 0.75rem 0.75rem 0rem 0rem;
+		width: 100%;
+	}
+
+	&__btm {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		height: 50%;
+		gap: 1rem;
+	}
+
+	&__title {
+		@include m-p1;
+
+		@include tablet {
+			@include d-p1;
+		}
+	}
+
+	&__description {
+		@include m-p2;
+
+		@include tablet {
+			@include d-p2;
+		}
+	}
+}
