@@ -3,13 +3,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/HomePage/home";
 import Categories from "./pages/CategoriesPage/categories";
 import Guide from "./pages/GuidePage/GuidePage";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
 	return (
 		<>
 			<BrowserRouter>
-				<div>{/* replace with header component*/}header</div>
-
+				<Navbar />
 				<div className="content">
 					<Routes>
 						{/* Home Route */}
