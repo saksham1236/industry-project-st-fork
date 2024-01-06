@@ -12,6 +12,7 @@ button,
     border-radius: 6.25rem;
     background: var(--primary-background, #DBE7C8);
     transition: all 0.3s ease;
+    
     &:hover {
         background-color: var(--primary-background-hover);
         cursor: pointer;
@@ -23,6 +24,7 @@ button,
     }
     &-link{
         display: flex;
+        flex: 1 1 auto;
     }
 
     &-icon {

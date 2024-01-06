@@ -28,22 +28,23 @@ export default function Navbar(props) {
 	};
 
 	return (
-		<nav>
-			<div className='nav-big'>
-				<Link to='/'>
-					<div className='nav__logo'>
-						<div className='nav__logo__image'>
-							<SplineLogo />
-						</div>
-						<div className='nav__logo__text'>
-							<h1>RE-cycle</h1>
-						</div>
+		<nav className="nav">
+			<Link to='/' className="nav__logo">
+				<div className='nav__logo'>
+					<div className='nav__logo__image'>
+						<SplineLogo />
 					</div>
-				</Link>
-
+					<div className='nav__logo__text'>
+						<h1>RE-cycle</h1>
+					</div>
+				</div>
+			</Link>
+			<div className='nav-big'>
 				<div className='nav__search'>
-					<search>
-						<form onSubmit={searchFormHandler}>
+					<search className='nav__search__outer'>
+						<form
+							className='nav__search__form'
+							onSubmit={searchFormHandler}>
 							<div className='nav__search__container'>
 								<div className='nav__search__icon'>
 									<ReactSVG
@@ -92,8 +93,10 @@ export default function Navbar(props) {
 			<div className='nav-mobile'>
 				<Sidebar>
 					<div className='nav__search'>
-						<search>
-							<form onSubmit={searchFormHandler}>
+						<search className='nav__search__outer'>
+							<form
+								className='nav__search__form'
+								onSubmit={searchFormHandler}>
 								<div className='nav__search__container'>
 									<div className='nav__search__icon'>
 										<ReactSVG
@@ -102,7 +105,7 @@ export default function Navbar(props) {
 										/>
 									</div>
 									<input
-										id='searchInput-mobile'
+										id='searchInput'
 										className='nav__search__input'
 										type='text'
 										placeholder='Search'
@@ -111,6 +114,7 @@ export default function Navbar(props) {
 							</form>
 						</search>
 					</div>
+                    <hr />
 					<div className='nav__links'>
 						<ul className='nav__links__list'>
 							<li>

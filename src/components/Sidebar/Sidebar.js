@@ -35,7 +35,7 @@ function Sidebar({ children }) {
 		<div>
 			<Button icon = {menuIcon} onClick={showSidebar} />
 			<div className={sidebar ? "sidebar" : "sidebar--inactive"}>
-				<div onClick={showSidebar}>X</div>
+				<Button icon = {closeIcon} onClick={showSidebar}/>
 					{children}
 				{/* {categories.map((category, index) => {
 					return (
