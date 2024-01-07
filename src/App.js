@@ -5,6 +5,8 @@ import Categories from "./pages/CategoriesPage/categories";
 import Guide from "./pages/GuidePage/GuidePage";
 import Navbar from "./components/Navbar/Navbar";
 import SplineView from "./components/splineView/SplineView";
+import About from "./pages/AboutPage/about";
+
 function App() {
 	return (
 		<>
@@ -17,6 +19,7 @@ function App() {
 						{/* Categories Route */}
 						<Route path="/categories" element={<Categories />}></Route>
 						<Route path="/categories/:id/guide" element={<Guide />}></Route>
+						<Route path="/about" element={<About />}></Route>
 					</Routes>
 				</div>
 			</BrowserRouter>
