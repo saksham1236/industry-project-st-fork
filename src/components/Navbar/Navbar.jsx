@@ -34,12 +34,14 @@ export default function Navbar(props) {
 
 	const [query, setQuery] = useState("");
 	const [searchResult, setSearchResult] = useState([]);
+	const [isCategories, setIsCategories] = useState(false);
 
 	const ifCategories = (value) => {
 		if (window.location.href === "http://localhost:3000/categories") {
 			props.setSearchQuery(value);
+			setIsCategories(true);
 		} else {
-			return false;
+			setIsCategories(false);
 		}
 	};
 
@@ -96,7 +98,7 @@ export default function Navbar(props) {
 									onChange={updateQuery}></input>
 							</div>
 						</form>
-						<SearchResults data={searchResult} />
+						<SearchResults data={searchResult} isCategories={isCategories} />
 					</search>
 				</div>
 
