@@ -9,8 +9,6 @@ import { useParams } from "react-router";
 import Data from "../../data/guides.json";
 
 export default function Guide() {
-	const title = "Organic";
-
 	const { id } = useParams();
 
 	const bannerImages = [
