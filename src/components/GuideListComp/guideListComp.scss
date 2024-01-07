@@ -4,6 +4,12 @@
 
   &__title {
     padding: 0.5rem;
+
+    @include m-h1;
+
+    @include tablet {
+      @include d-h1;
+    }
   }
 
   &__list-container {
@@ -27,5 +33,9 @@
   &__step {
 
     @include m-p3;
+
+    @include tablet {
+      @include d-p2;
+    }
   }
 }
