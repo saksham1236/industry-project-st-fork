@@ -1,0 +1,12 @@
+@use "../../styles/partials/mixins" as *;
+
+.search-results {
+	position: absolute;
+	top: 3.7rem;
+	z-index: 10;
+	align-self: center;
+	width: 95%;
+	background-color: #dbe7c8;
+	border-radius: 1rem;
+	padding: 1rem 1.5rem;
+}
