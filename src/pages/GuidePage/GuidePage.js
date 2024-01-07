@@ -1,6 +1,7 @@
 import "./guidePage.scss";
 import GuideInstructionsComp from "../../components/GuideInstructionsComp/guideInstructionsComp";
 import Banner from "../../components/Banner/Banner";
+import GuideReasons from "../../components/GuideReasons/guideReasons";
 import backgroundHaz from "../../assets/images/background-hazardous.png";
 import foregroundHaz from "../../assets/images/foreground-hazardous.png";
 import backgroundOrg from "../../assets/images/background-organic.png";
@@ -30,7 +31,8 @@ export default function Guide() {
 				foregroundURL={filterImages[0].fg}
 				title={filterData[0].title}
 			/>
-			<GuideInstructionsComp id={id} data={filterData[0]} />
+			<GuideInstructionsComp />
+			<GuideReasons />
 		</>
 	);
 }

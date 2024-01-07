@@ -14,19 +14,31 @@
 		"dontSteps": [
 			"Put it out for collection in bad weather",
 			"Put in regular household garbage, recycling or green bin"
+		],
+		"reasons": [
+			"Harmful toxins leach into the soil and contaminate groundwater",
+			"The accumulation of pollutants in the body cause cancer and damage to DNA",
+			"Made with nonbiodegradable materials so they will not decompose",
+			"Toxic chemicals released into the air"
 		]
 	},
 	{
 		"id": "2",
 		"title": "Oil",
 		"doSteps": ["Leave oil to cool", "Put it in your organics / green bin"],
-		"image": "http://dummyimage.com/200.png/pp44ff/ffffff",
 		"card_color": "#70c470",
 		"text_color": "#003400",
+		"image": "http://dummyimage.com/200.png/pp44ff/ffffff",
 		"dontSteps": [
 			"Pour down sink or toilet",
 			"Pour on the ground",
 			"Put directly in your garbage"
+		],
+		"reasons": [
+			"Clogs sewer system of house or even neighborhood",
+			"Harmful and potentially toxic to animals",
+			"Destroys shorelines, natural habitats and wildlife food supplies",
+			"Interferes with water treatment facilities"
 		]
 	}
 ]
