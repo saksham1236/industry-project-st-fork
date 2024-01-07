@@ -20,7 +20,7 @@ function GuideInstructionsComp() {
               />
             </div>
             <div className="guide-inst__image-container">
-              <img src={data.image} className="guide-inst__image"></img>
+              <img src={data.image} className="guide-inst__image" alt="item to be disposed of"></img>
             </div>
             <div className="guide-inst__list">
               <h1 className="guide-list__title">DO NOT:</h1>

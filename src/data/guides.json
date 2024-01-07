@@ -2,49 +2,28 @@
   {
     "id": "1",
     "doSteps": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "Protect personal information: remove SIM card, wipe hard drive, reset, etc",
+      "Put small items in a clear plastic bag or open cardboard box",
+      "On garbage collection day, set out 2 feet away from garbage bin",
+      "Or if item still works, think about donating it for reuse"
     ],
     "image": "http://dummyimage.com/200.png/aa44ff/ff00ff",
     "dontSteps": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "Put it out for collection in bad weather",
+      "Put in regular household garbage, recycling or green bin"
     ]
   },
   {
     "id": "2",
     "doSteps": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "Leave oil to cool",
+      "Put it in your organics / green bin"
     ],
     "image": "http://dummyimage.com/200.png/pp44ff/ffffff",
     "dontSteps": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    ]
-  },
-  {
-    "id": "3",
-    "doSteps": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    ],
-    "image": "http://dummyimage.com/200.png/zz4444/ffff",
-    "dontSteps": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "Pour down sink or toilet",
+      "Pour on the ground",
+      "Put directly in your garbage"
     ]
   }
 ]
