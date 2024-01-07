@@ -23,13 +23,5 @@ export default function Home() {
 		},
 	];
 
-	return (
-		<>
-			{/* {dummyData.map((data) => {
-				return (
-					<Tile image={data.image} title={data.title} desc={data.description} />
-				);
-			})} */}
-		</>
-	);
+	return <></>;
 }
