@@ -1,6 +1,5 @@
 import "./guideInstructionsComp.scss";
 import GuideListComponent from "../GuideListComp/guideListComp";
-import Data from "../../data/guides.json";
 
 function GuideInstructionsComp({ data }) {
 	return (
