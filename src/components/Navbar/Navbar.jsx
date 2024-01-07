@@ -14,20 +14,6 @@ import Sidebar from "../Sidebar/Sidebar";
 export default function Navbar(props) {
 	const { links } = props;
 
-	const [query, setQuery] = useState("");
-
-	const updateQuery = (e) => {
-		const text = e.target.value;
-		setQuery(text);
-		console.log(text);
-	};
-
-	const searchFormHandler = (e) => {
-		e.preventDefault();
-		e.stopPropagation();
-		alert(query);
-	};
-
 	const cardData = [
 		{
 			card_header: "Liquid",
@@ -45,6 +31,28 @@ export default function Navbar(props) {
 			card_header: "Solid",
 		},
 	];
+
+	const [query, setQuery] = useState("");
+	const [searchResult, setSearchResult] = useState([]);
+
+	const searchData = (value) => {
+		const results = cardData.filter((obj) => {
+			return value && obj.card_header.toLowerCase().includes(value);
+		});
+		setSearchResult(results);
+	};
+
+	const updateQuery = (e) => {
+		const text = e.target.value;
+		setQuery(text);
+		searchData(text);
+	};
+
+	const searchFormHandler = (e) => {
+		e.preventDefault();
+		e.stopPropagation();
+		alert(query);
+	};
 
 	return (
 		<nav className="nav">
@@ -77,7 +85,7 @@ export default function Navbar(props) {
 									onChange={updateQuery}></input>
 							</div>
 						</form>
-						<SearchResults result={query} />
+						<SearchResults data={searchResult} />
 					</search>
 				</div>
 
