@@ -35,6 +35,14 @@ export default function Navbar(props) {
 	const [query, setQuery] = useState("");
 	const [searchResult, setSearchResult] = useState([]);
 
+	const ifCategories = (value) => {
+		if (window.location.href === "http://localhost:3000/categories") {
+			props.setSearchQuery(value);
+		} else {
+			return false;
+		}
+	};
+
 	const searchData = (value) => {
 		const results = cardData.filter((obj) => {
 			return (
@@ -42,6 +50,7 @@ export default function Navbar(props) {
 			);
 		});
 		setSearchResult(results);
+		ifCategories(value);
 	};
 
 	const updateQuery = (e) => {
