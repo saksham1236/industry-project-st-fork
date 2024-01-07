@@ -1,0 +1,13 @@
+@use "../../styles/partials/mixins";
+
+.guide-list {
+  border-radius: 0.75rem;
+
+  &__title {
+    padding: 0.5rem;
+  }
+
+  &__list-container {
+    padding: 0 0.5rem 1rem;
+  }
+}
