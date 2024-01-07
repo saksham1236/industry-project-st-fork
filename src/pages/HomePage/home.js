@@ -25,7 +25,6 @@ export default function Home() {
 
 	return (
 		<>
-			home page
 			{/* {dummyData.map((data) => {
 				return (
 					<Tile image={data.image} title={data.title} desc={data.description} />
