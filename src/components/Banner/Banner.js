@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./banner.scss";
-import { useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function Banner({ backgroundURL, foregroundURL }) {
 	const ref = useRef(null);
