@@ -1,11 +1,13 @@
 import "./searchResults.scss";
 
-function SearchResults({ result }) {
+function SearchResults({ data }) {
+	console.log(data);
+
 	return (
 		<div className="search-results">
-			<div className="search-results__text">{result}</div>
-			<div className="search-results__text">search</div>
-			<div className="search-results__text">search</div>
+			{/* {results.map((result, index) => {
+				return <div className="search-results__item">{result}</div>;
+			})} */}
 		</div>
 	);
 }
