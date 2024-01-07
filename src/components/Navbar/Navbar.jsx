@@ -66,6 +66,7 @@ export default function Navbar(props) {
 		e.stopPropagation();
 		alert(query);
 		setQuery("");
+		setSearchResult([]);
 	};
 
 	return (
