@@ -37,7 +37,9 @@ export default function Navbar(props) {
 
 	const searchData = (value) => {
 		const results = cardData.filter((obj) => {
-			return value && obj.card_header.toLowerCase().includes(value);
+			return (
+				value && obj.card_header.toLowerCase().includes(value.toLowerCase())
+			);
 		});
 		setSearchResult(results);
 	};
