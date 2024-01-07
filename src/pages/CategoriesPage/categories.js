@@ -3,7 +3,6 @@ import testImage from "../../assets/images/batteries.png";
 import CategoryCard from "../../components/CategoryCard/categoryCard";
 
 export default function Categories({ searchQuery }) {
-	console.log(searchQuery);
 	const cardData = [
 		{
 			image_one: { testImage },
