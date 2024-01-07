@@ -31,7 +31,7 @@ export default function Guide() {
 				foregroundURL={filterImages[0].fg}
 				title={filterData[0].title}
 			/>
-			<GuideInstructionsComp />
+			<GuideInstructionsComp data={filterData[0]} />
 			<GuideReasons />
 		</>
 	);
