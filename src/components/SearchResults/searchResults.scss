@@ -12,6 +12,13 @@
 	border-radius: 1rem;
 
 	&__item {
-		margin: 0.4rem 1rem;
+		border-radius: 1rem;
+		padding: 0.4rem 1rem;
+		// margin: 0.4rem 1rem;
+
+		&:hover {
+			cursor: pointer;
+			background-color: #0f200093;
+		}
 	}
 }
