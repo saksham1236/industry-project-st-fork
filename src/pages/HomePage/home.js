@@ -1,5 +1,6 @@
 import "./home.scss";
 import Tile from "../../components/Tile/Tile";
+import Navbar from "../../components/Navbar/Navbar";
 
 export default function Home() {
 	const dummyData = [
@@ -26,11 +27,11 @@ export default function Home() {
 	return (
 		<>
 			home page
-			{dummyData.map((data) => {
+			{/* {dummyData.map((data) => {
 				return (
 					<Tile image={data.image} title={data.title} desc={data.description} />
 				);
-			})}
+			})} */}
 		</>
 	);
 }
