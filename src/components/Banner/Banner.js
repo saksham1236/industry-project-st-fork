@@ -1,14 +1,8 @@
 import "./banner.scss";
-function Banner({ imgURl, Text }) {
+function Banner() {
 	return (
 		<>
-			<div className="banner">
-				<div
-					className="banner__content"
-					style={{ backgroundImage: `url(${imgURl})` }}>
-					<div className="banner__text">{Text}</div>
-				</div>
-			</div>
+			<div className="banner">banner</div>
 		</>
 	);
 }
