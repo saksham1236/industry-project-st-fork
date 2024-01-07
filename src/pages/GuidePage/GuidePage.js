@@ -3,6 +3,7 @@ import GuideInstructionsComp from "../../components/GuideInstructionsComp/guideI
 import Banner from "../../components/Banner/Banner";
 import background from "../../assets/images/background-organic.png";
 import foreground from "../../assets/images/foreground-organic.png";
+import GuideReasons from "../../components/GuideReasons/guideReasons";
 
 export default function Guide() {
 	const title = "Organic";
@@ -14,6 +15,7 @@ export default function Guide() {
 				title={title}
 			/>
 			<GuideInstructionsComp />
+			<GuideReasons />
 		</>
 	);
 }

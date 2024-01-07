@@ -1,29 +1,47 @@
 [
   {
     "id": "1",
-    "doSteps": [
+    "doSteps":
+    [
       "Protect personal information: remove SIM card, wipe hard drive, reset, etc",
       "Put small items in a clear plastic bag or open cardboard box",
       "On garbage collection day, set out 2 feet away from garbage bin",
       "Or if item still works, think about donating it for reuse"
     ],
     "image": "http://dummyimage.com/200.png/aa44ff/ff00ff",
-    "dontSteps": [
+    "dontSteps":
+    [
       "Put it out for collection in bad weather",
       "Put in regular household garbage, recycling or green bin"
+    ],
+    "reasons":
+    [
+      "Harmful toxins leach into the soil and contaminate groundwater",
+      "The accumulation of pollutants in the body cause cancer and damage to DNA",
+      "Made with nonbiodegradable materials so they will not decompose",
+      "Toxic chemicals released into the air"
     ]
   },
   {
     "id": "2",
-    "doSteps": [
+    "doSteps":
+    [
       "Leave oil to cool",
       "Put it in your organics / green bin"
     ],
     "image": "http://dummyimage.com/200.png/pp44ff/ffffff",
-    "dontSteps": [
+    "dontSteps":
+    [
       "Pour down sink or toilet",
       "Pour on the ground",
       "Put directly in your garbage"
+    ],
+    "reasons":
+    [
+      "Clogs sewer system of house or even neighborhood",
+      "Harmful and potentially toxic to animals",
+      "Destroys shorelines, natural habitats and wildlife food supplies",
+      "Interferes with water treatment facilities"
     ]
   }
 ]
