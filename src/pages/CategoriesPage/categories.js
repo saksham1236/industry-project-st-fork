@@ -60,9 +60,11 @@ export default function Categories({ searchQuery }) {
 				"Solid waste is any garbage, sludge, and refuse found in industrial and commercial locations. The five major types of solid rubbish are;",
 		},
 	];
+
 	const filteredData = cardData.filter((data) =>
 		data.card_header.toLowerCase().includes(searchQuery.toLowerCase())
 	);
+
 	return (
 		<>
 			{filteredData.map((data) => {
