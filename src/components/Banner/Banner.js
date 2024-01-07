@@ -2,7 +2,7 @@ import { useRef } from "react";
 import "./banner.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-function Banner({ backgroundURL, foregroundURL }) {
+function Banner({ backgroundURL, foregroundURL, title }) {
 	const ref = useRef(null);
 	const { scrollYProgress } = useScroll({
 		target: ref,
@@ -14,7 +14,7 @@ function Banner({ backgroundURL, foregroundURL }) {
 	return (
 		<div ref={ref} className="banner">
 			<motion.div className="banner__text" style={{ y: textY }}>
-				Hello World!
+				{title}
 			</motion.div>
 			<div
 				className="banner__background"
