@@ -1,29 +1,32 @@
 [
-  {
-    "id": "1",
-    "doSteps": [
-      "Protect personal information: remove SIM card, wipe hard drive, reset, etc",
-      "Put small items in a clear plastic bag or open cardboard box",
-      "On garbage collection day, set out 2 feet away from garbage bin",
-      "Or if item still works, think about donating it for reuse"
-    ],
-    "image": "http://dummyimage.com/200.png/aa44ff/ff00ff",
-    "dontSteps": [
-      "Put it out for collection in bad weather",
-      "Put in regular household garbage, recycling or green bin"
-    ]
-  },
-  {
-    "id": "2",
-    "doSteps": [
-      "Leave oil to cool",
-      "Put it in your organics / green bin"
-    ],
-    "image": "http://dummyimage.com/200.png/pp44ff/ffffff",
-    "dontSteps": [
-      "Pour down sink or toilet",
-      "Pour on the ground",
-      "Put directly in your garbage"
-    ]
-  }
+	{
+		"id": "1",
+		"title": "Cell Phone",
+		"doSteps": [
+			"Protect personal information: remove SIM card, wipe hard drive, reset, etc",
+			"Put small items in a clear plastic bag or open cardboard box",
+			"On garbage collection day, set out 2 feet away from garbage bin",
+			"Or if item still works, think about donating it for reuse"
+		],
+		"image": "http://dummyimage.com/200.png/aa44ff/ff00ff",
+		"card_color": "#fff8e8",
+		"text_color": "#875b0f",
+		"dontSteps": [
+			"Put it out for collection in bad weather",
+			"Put in regular household garbage, recycling or green bin"
+		]
+	},
+	{
+		"id": "2",
+		"title": "Oil",
+		"doSteps": ["Leave oil to cool", "Put it in your organics / green bin"],
+		"image": "http://dummyimage.com/200.png/pp44ff/ffffff",
+		"card_color": "#70c470",
+		"text_color": "#003400",
+		"dontSteps": [
+			"Pour down sink or toilet",
+			"Pour on the ground",
+			"Put directly in your garbage"
+		]
+	}
 ]
