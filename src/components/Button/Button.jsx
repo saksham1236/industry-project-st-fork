@@ -17,9 +17,11 @@ export default function Button(props) {
     if(link) {
         return <Link to = {link} className="button-link"><button className="button" {...rest}>{icon && <ReactSVG src = {icon} />}{label}</button></Link>
     }
-
-    else {
+    else if(label) {
         return <button className="button" {...rest}>{icon && <ReactSVG src = {icon} />}{label}</button>
+    }
+    else {
+        return <button className="button button-icon" {...rest}>{icon && <ReactSVG src = {icon} />}</button>
     }
 
 }
