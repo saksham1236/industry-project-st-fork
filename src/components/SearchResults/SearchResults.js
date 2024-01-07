@@ -1,13 +1,15 @@
 import "./searchResults.scss";
 
 function SearchResults({ data }) {
-	console.log(data);
-
 	return (
 		<div className="search-results">
-			{/* {results.map((result, index) => {
-				return <div className="search-results__item">{result}</div>;
-			})} */}
+			{data.map((result, index) => {
+				return (
+					<div key={index} className="search-results__item">
+						{result.card_header}
+					</div>
+				);
+			})}
 		</div>
 	);
 }
