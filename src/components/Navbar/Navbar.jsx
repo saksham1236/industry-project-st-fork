@@ -65,6 +65,7 @@ export default function Navbar(props) {
 		e.preventDefault();
 		e.stopPropagation();
 		alert(query);
+		setQuery("");
 	};
 
 	return (
@@ -94,6 +95,7 @@ export default function Navbar(props) {
 									id="searchInput"
 									className="nav__search__input"
 									type="text"
+									value={query}
 									placeholder="Search"
 									onChange={updateQuery}></input>
 							</div>
