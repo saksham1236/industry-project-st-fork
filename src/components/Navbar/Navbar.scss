@@ -1,4 +1,5 @@
 @use "../../styles/partials/mixins" as*;
+@use "../../styles/partials/variables" as*;
 
 nav,
 .nav {
@@ -82,6 +83,10 @@ nav,
 	&__search {
 		display: flex;
 		width: 100%;	
+		&:focus-within {
+			border: 2px solid #0F2000;
+			border-radius: 6.25rem;
+		}
 
 
 		@include tablet{
@@ -98,7 +103,7 @@ nav,
 			align-items: center;
 			gap: 0.5rem;
 			background-color: var(--primary-background);
-			padding: 1rem 1.125rem;
+			padding: 0 1.125rem;
 			border-radius: 6.25rem;
 			width: 100%;
 		}
@@ -109,6 +114,11 @@ nav,
 			outline: none;
 			background-color: var(--primary-background);
 			width: 100%;
+			height: 3.5rem;
+			&:focus {
+				font-size: 1rem;
+				color: #0F2000;
+			}
 		}
 
 		&__icon {
@@ -121,4 +131,3 @@ nav,
 	}
 
 }
-
