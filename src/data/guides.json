@@ -8,6 +8,8 @@
       "Or if item still works, think about donating it for reuse"
     ],
     "image": "http://dummyimage.com/200.png/aa44ff/ff00ff",
+    "card_color": "#fff8e8",
+	  "text_color": "#875b0f",
     "dontSteps": [
       "Put it out for collection in bad weather",
       "Put in regular household garbage, recycling or green bin"
@@ -20,6 +22,8 @@
       "Put it in your organics / green bin"
     ],
     "image": "http://dummyimage.com/200.png/pp44ff/ffffff",
+    "card_color": "#60bd6066",
+	  "text_color": "#003400",
     "dontSteps": [
       "Pour down sink or toilet",
       "Pour on the ground",
