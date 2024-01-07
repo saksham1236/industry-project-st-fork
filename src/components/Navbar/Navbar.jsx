@@ -67,6 +67,7 @@ export default function Navbar(props) {
 		alert(query);
 		setQuery("");
 		setSearchResult([]);
+		props.setSearchQuery("");
 	};
 
 	return (
