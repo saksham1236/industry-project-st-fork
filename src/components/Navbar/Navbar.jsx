@@ -130,6 +130,7 @@ export default function Navbar(props) {
 										onChange={updateQuery}></input>
 								</div>
 							</form>
+							<SearchResults data={searchResult} />
 						</search>
 					</div>
 					<hr />
