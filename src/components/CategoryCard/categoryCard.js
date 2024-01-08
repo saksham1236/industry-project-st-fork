@@ -1,8 +1,6 @@
 import "./categoryCard.scss";
 
 export default function CategoryCard(props) {
-	console.log(props);
-
 	return (
 		<>
 			<div
