@@ -1,4 +1,5 @@
 import "./home.scss";
+import { Link } from "react-router-dom";
 import SplashScene from "../../components/SplashScene/SplashScene";
 import Button from "../../components/Button/Button";
 import categoryIcon from "../../assets/icons/category_FILL0_wght400_GRAD0_opsz24.svg";
@@ -21,7 +22,9 @@ export default function Home() {
 						solutions. Join us on the green path to make a positive impact, one
 						conscious decision at a time.
 					</p>
-					<Button label="Go to Categories" icon={categoryIcon} />
+					<Link to={"/categories"} className="link">
+						<Button label="Go to Categories" icon={categoryIcon} />
+					</Link>
 				</div>
 			</section>
 		</>
