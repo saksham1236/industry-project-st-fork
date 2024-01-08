@@ -22,11 +22,13 @@
   }
 
   &__image-container {
-    margin: auto;
+    align-self: flex-end;
+    padding-right: 6rem;
   }
 
   &__image {
     border-radius: 0.75rem;
+    // align-self: flex-end
   }
 
   &__link {
