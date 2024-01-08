@@ -3,10 +3,22 @@ import CategoryCard from "../../components/CategoryCard/categoryCard";
 import cardData from "../../data/cards.json";
 
 export default function Categories({ searchQuery }) {
-	const filteredData = cardData.filter((data) =>
-		data.card_header.toLowerCase().includes(searchQuery.toLowerCase())
-	);
+	const filteredData = cardData.filter((data) => {
+		return (
+			data.card_header.toLowerCase().includes(searchQuery.toLowerCase()) ||
+			data.imageData.image_one_name
+				.toLowerCase()
+				.includes(searchQuery.toLowerCase()) ||
+			data.imageData.image_two_name
+				.toLowerCase()
+				.includes(searchQuery.toLowerCase()) ||
+			data.imageData.image_three_name
+				.toLowerCase()
+				.includes(searchQuery.toLowerCase())
+		);
+	});
 
+	console.log(cardData);
 	return (
 		<>
 			{filteredData.map((data) => {
