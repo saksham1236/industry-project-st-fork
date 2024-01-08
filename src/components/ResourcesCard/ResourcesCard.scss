@@ -1,50 +1,47 @@
 @use "../../styles/partials/mixins" as *;
 
 .resources-card {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  border-radius: 1.5rem;
-  background-color: #DBe7C8;
-  margin-bottom: 2rem;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	border-radius: 1.5rem;
+	background-color: #dbe7c8;
+	margin-bottom: 2rem;
+	border: 2px solid rgba(0, 0, 0, 0.1);
 
-  &__title-container {
-    padding: .7rem;
-  }
+	&__title-container {
+		padding: 0.7rem;
+	}
 
-  &__title {
-    @include m-h2;
+	&__title {
+		@include m-h2;
 
-    @include tablet {
-      @include d-h2;
-    }
-  }
+		@include tablet {
+			@include d-h2;
+		}
+	}
 
-  &__image-container {
-    align-self: flex-end;
-    padding-right: 6rem;
-  }
+	&__image {
+		border-radius: 0.75rem;
+		width: 400px;
+	}
 
-  &__image {
-    border-radius: 0.75rem;
-    // align-self: flex-end
-  }
+	&__link {
+		@include m-p2;
 
-  &__link {
-    @include m-p2;
+		@include tablet {
+			@include d-p2;
+		}
+	}
 
-    @include tablet {
-      @include d-p2;
-    }
-  }
+	&__description {
+		padding: 0.5rem 0;
+		@include m-p1;
 
-  &__description {
-    padding: .5rem 0;
-    @include m-p1;
-
-    @include tablet {
-      @include d-p1;
-    }
-  }
+		@include tablet {
+			@include d-p1;
+		}
+	}
 }
