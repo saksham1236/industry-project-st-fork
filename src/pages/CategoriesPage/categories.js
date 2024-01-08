@@ -18,12 +18,12 @@ export default function Categories({ searchQuery }) {
 		);
 	});
 
-	console.log(cardData);
 	return (
 		<>
-			{filteredData.map((data) => {
+			{filteredData.map((data, index) => {
 				return (
 					<CategoryCard
+						key={index}
 						imageOne={data.imageData.image_one}
 						imageTwo={data.imageData.image_two}
 						imageThree={data.imageData.image_three}
