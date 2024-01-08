@@ -1,19 +1,34 @@
 import "./categories.scss";
 import testImage from "../../assets/images/batteries.png";
 import CategoryCard from "../../components/CategoryCard/categoryCard";
+import cardData2 from "../../data/cards.json";
+import { lazy } from "react";
 
 export default function Categories({ searchQuery }) {
 	const cardData = [
 		{
-			image_one: { testImage },
-			image_two: { testImage },
-			image_three: { testImage },
 			card_header: "Liquid",
-			image_name: "Batteries",
 			card_color: "#29a6ff75",
 			text_color: "#00487b",
 			description:
 				"Liquid waste refers to all grease, oil, sludges, wash water, waste detergents and dirty water that have been thrown away. They are hazardous and poisonous to our environment and are found in industries as well as households. Wastewater, as it is often called, is any waste that exists in liquid form.",
+			imageData: [
+				{
+					id: "1",
+					image_one: { testImage },
+					image_name: "Batteries",
+				},
+				{
+					id: "2",
+					image_two: { testImage },
+					image_name: "cell phone",
+				},
+				{
+					id: "3",
+					image_three: { testImage },
+					image_name: "waste",
+				},
+			],
 		},
 		{
 			image_one: { testImage },
@@ -65,8 +80,12 @@ export default function Categories({ searchQuery }) {
 		data.card_header.toLowerCase().includes(searchQuery.toLowerCase())
 	);
 
+	const image = cardData2[0].imageData.image_one;
+	console.log(image);
+
 	return (
 		<>
+			<img src={image} />
 			{filteredData.map((data) => {
 				return (
 					<CategoryCard
