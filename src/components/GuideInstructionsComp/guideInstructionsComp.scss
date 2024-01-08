@@ -3,7 +3,7 @@
 .guide-inst {
 	display: flex;
 	flex-direction: column;
-	border-radius: 0rem 0rem 0.75rem 0.75rem;
+	padding: 0 1.5rem;
 	justify-content: center;
 
 	@include tablet {
@@ -13,20 +13,20 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
+		padding: .5rem 0;
 
 		@include tablet {
-			width: 25%;
+			width: 35%;
 		}
 	}
 
 	&__image-container {
-		padding: 1rem;
-
+		padding: .5rem;
 		margin: auto;
 
 		@include tablet {
 			margin: 0;
+			padding: .5rem 1rem;
 		}
 	}
 

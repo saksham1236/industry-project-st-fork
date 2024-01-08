@@ -32,7 +32,7 @@ export default function Guide() {
 				title={filterData[0].title}
 			/>
 			<GuideInstructionsComp data={filterData[0]} />
-			<GuideReasons />
+			<GuideReasons data={filterData[0]}/>
 		</>
 	);
 }

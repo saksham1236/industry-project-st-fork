@@ -1,13 +1,41 @@
-@use "../../styles/partials/mixins";
+@use "../../styles/partials/mixins" as *;
 
 .guide-list {
-  border-radius: 0.75rem;
 
   &__title {
     padding: 0.5rem;
+
+    @include m-h1;
+
+    @include tablet {
+      @include d-h1;
+    }
   }
 
   &__list-container {
     padding: 0 0.5rem 1rem;
+  }
+
+  &__chip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5rem 1rem;
+    box-shadow: 0.25rem 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.3);
+    border-radius: 0.75rem;
+    margin-top: .5rem;
+  }
+
+  &__icon {
+    padding-right: 0.5rem;
+  }
+
+  &__step {
+
+    @include m-p3;
+
+    @include tablet {
+      @include d-p2;
+    }
   }
 }

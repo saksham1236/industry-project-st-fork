@@ -11,6 +11,7 @@
 		"image": "http://dummyimage.com/200.png/aa44ff/ff00ff",
 		"card_color": "#fff8e8",
 		"text_color": "#875b0f",
+		"listItemColor": "#f6ebd6",
 		"dontSteps": [
 			"Put it out for collection in bad weather",
 			"Put in regular household garbage, recycling or green bin"
@@ -28,6 +29,7 @@
 		"doSteps": ["Leave oil to cool", "Put it in your organics / green bin"],
 		"card_color": "#70c470",
 		"text_color": "#003400",
+		"listItemColor": "#449f4482",
 		"image": "http://dummyimage.com/200.png/pp44ff/ffffff",
 		"dontSteps": [
 			"Pour down sink or toilet",
