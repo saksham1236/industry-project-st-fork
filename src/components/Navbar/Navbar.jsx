@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import SearchResults from "../SearchResults/SearchResults";
-import SplineLogo from "../splineView/SplineView";
+import SplineLogo from "../SplineLogo/SplineView";
 import categoryIcon from "../../assets/icons/category_FILL0_wght400_GRAD0_opsz24.svg";
 import resourceIcon from "../../assets/icons/crowdsource_FILL0_wght400_GRAD0_opsz24.svg";
 import aboutIcon from "../../assets/icons/help_FILL0_wght400_GRAD0_opsz24.svg";
