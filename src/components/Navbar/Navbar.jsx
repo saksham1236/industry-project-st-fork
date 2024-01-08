@@ -16,19 +16,64 @@ export default function Navbar(props) {
 
 	const cardData = [
 		{
-			card_header: "Liquid",
+			id: "1",
+			name: "Oil",
 		},
 		{
-			card_header: "Hazardous",
+			id: "2",
+			name: "Waste detergents",
 		},
 		{
-			card_header: "Organic",
+			id: "3",
+			name: "Sludge",
 		},
 		{
-			card_header: "Recyclable",
+			id: "4",
+			name: "Batteries",
 		},
 		{
-			card_header: "Solid",
+			id: "5",
+			name: "Medical waste",
+		},
+		{
+			id: "6",
+			name: "Cellphone",
+		},
+		{
+			id: "8",
+			name: "Plant waste",
+		},
+		{
+			id: "9",
+			name: "Food waste",
+		},
+		{
+			id: "10",
+			name: "Cardboard",
+		},
+		{
+			id: "11",
+			name: "Plastics (recyclable)",
+		},
+		{
+			id: "12",
+			name: "Paper",
+		},
+		{
+			id: "13",
+			name: "Metal containers / Tins",
+		},
+		{
+			id: "14",
+			name: "Plastics (solid)",
+		},
+		{
+			id: "15",
+			name: "Furniture",
+		},
+		{
+			id: "15",
+			name: "Glass (solid)",
 		},
 	];
 
@@ -47,9 +92,7 @@ export default function Navbar(props) {
 
 	const searchData = (value) => {
 		const results = cardData.filter((obj) => {
-			return (
-				value && obj.card_header.toLowerCase().includes(value.toLowerCase())
-			);
+			return value && obj.name.toLowerCase().includes(value.toLowerCase());
 		});
 		setSearchResult(results);
 		ifCategories(value);
