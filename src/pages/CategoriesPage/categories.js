@@ -2,7 +2,6 @@ import "./categories.scss";
 import testImage from "../../assets/images/batteries.png";
 import CategoryCard from "../../components/CategoryCard/categoryCard";
 import cardData2 from "../../data/cards.json";
-import { lazy } from "react";
 
 export default function Categories({ searchQuery }) {
 	const cardData = [
