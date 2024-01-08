@@ -1,69 +1,68 @@
 @use "../../styles/partials/mixins" as *;
 
 .category--card {
-  @include mobile {
-    text-align: center;
-    border-radius: 1.5rem;
-    background-color: #2020ffe3;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border: 2px solid rgb(0, 0, 0, 0.1);
-  }
-  .category__header {
-    @include mobile {
-      font-size: 2rem;
-      line-height: 2.5rem;
-    }
-  }
-  .category__description {
-    @include mobile {
-      padding-bottom: 2rem;
-    }
-  }
-  .image--container {
-    @include mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: center;
-    }
-    @include tablet {
-        flex-direction: row;
-        justify-content: center;
-    }
-  }
-  .category__image {
-    @include mobile {
-      width: 278px;
-      height: 277px;
-      background: linear-gradient(
-          180deg,
-          rgba(0, 17, 42, 0) 58.51%,
-          rgba(0, 22, 47, 0.75) 100%
-        ),
-        url("../../assets/images/batteries.png"),
-        lightgray 50% / cover no-repeat;
-        background-size: cover;
-        border-radius: 1.5rem;
-        position: relative;
-        object-fit: cover;
-        transition: box-shadow 0.6s, transform 0.6s;
-        &:hover {
-          box-shadow: 10px 10px 40px rgb(0, 0, 0, 0.6);
-          transform: scale(1.1);
-          z-index: 1;
-          cursor: pointer;
-        }
-    }
-  }
-    .image__text {
-      @include mobile {
-        position: absolute;
-        color: white;
-        font-size: 22px;
-        font-weight: 600;
-        bottom: 1rem;
-        left: 1.5rem;
-      }
-    }
+	@include mobile {
+		text-align: center;
+		border-radius: 1.5rem;
+		background-color: #2020ffe3;
+		padding: 2rem;
+		margin-bottom: 2rem;
+		border: 2px solid rgb(0, 0, 0, 0.1);
+	}
+	.category__header {
+		@include mobile {
+			font-size: 2rem;
+			line-height: 2.5rem;
+		}
+	}
+	.category__description {
+		@include mobile {
+			padding-bottom: 2rem;
+		}
+	}
+	.image--container {
+		@include mobile {
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+			align-items: center;
+		}
+		@include tablet {
+			flex-direction: row;
+			justify-content: center;
+		}
+	}
+	.category__image {
+		@include mobile {
+			width: 278px;
+			height: 277px;
+			background: linear-gradient(
+					180deg,
+					rgba(0, 17, 42, 0) 58.51%,
+					rgba(0, 22, 47, 0.75) 100%
+				),
+				lightgray 50% / cover no-repeat;
+			background-size: cover;
+			border-radius: 1.5rem;
+			position: relative;
+			object-fit: cover;
+			transition: box-shadow 0.6s, transform 0.6s;
+			&:hover {
+				box-shadow: 10px 10px 40px rgb(0, 0, 0, 0.6);
+				transform: scale(1.1);
+				z-index: 1;
+				cursor: pointer;
+			}
+		}
+	}
+	.image__text {
+		@include mobile {
+			position: absolute;
+			color: white;
+			font-size: 22px;
+			font-weight: 600;
+			bottom: 1rem;
+			left: 1.5rem;
+		}
+	}
 }

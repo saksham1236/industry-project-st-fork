@@ -9,7 +9,7 @@ function SearchResults({ data, isCategories }) {
 				{data.map((result, index) => {
 					return (
 						<div key={index} className="search-results__item">
-							{result.card_header}
+							{result.name}
 						</div>
 					);
 				})}

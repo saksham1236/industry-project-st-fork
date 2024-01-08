@@ -12,6 +12,8 @@
 		"card_color": "#fff8e8",
 		"text_color": "#875b0f",
 		"listItemColor": "#f6ebd6",
+		"bg": "../../img/background-hazardous.png",
+		"fg": "../../img/foreground-hazardous.png",
 		"dontSteps": [
 			"Put it out for collection in bad weather",
 			"Put in regular household garbage, recycling or green bin"
@@ -30,6 +32,8 @@
 		"card_color": "#70c470",
 		"text_color": "#003400",
 		"listItemColor": "#449f4482",
+		"bg": "../../img/background-organic.png",
+		"fg": "../../img/foreground-organic.png",
 		"image": "http://dummyimage.com/200.png/pp44ff/ffffff",
 		"dontSteps": [
 			"Pour down sink or toilet",
