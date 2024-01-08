@@ -1,0 +1,21 @@
+@use '../../styles/partials/mixins' as *;
+
+.about--text--container {
+    text-align: center;
+    .about__intro {
+        @include mobile {
+            font-size: 1.5rem;
+            padding: 10rem 18rem 0 ;
+        }
+    }
+    .about__description {
+        @include mobile {
+            font-size: 1.5rem;
+            padding: 2rem 18rem 0 ;
+        }
+    }
+    .slogan {
+        font-size: 3rem;
+        padding: 2rem 18rem 0 ;
+    }
+}

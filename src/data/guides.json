@@ -1,50 +1,44 @@
 [
-  {
-    "id": "1",
-    "doSteps": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    ],
-    "image": "http://dummyimage.com/200.png/aa44ff/ff00ff",
-    "dontSteps": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    ]
-  },
-  {
-    "id": "2",
-    "doSteps": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    ],
-    "image": "http://dummyimage.com/200.png/pp44ff/ffffff",
-    "dontSteps": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    ]
-  },
-  {
-    "id": "3",
-    "doSteps": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    ],
-    "image": "http://dummyimage.com/200.png/zz4444/ffff",
-    "dontSteps": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-      "Ut enim ad minim veniam, quis nostrud exercitation",
-      "ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    ]
-  }
+	{
+		"id": "1",
+		"title": "Cell Phone",
+		"doSteps": [
+			"Protect personal information: remove SIM card, wipe hard drive, reset, etc",
+			"Put small items in a clear plastic bag or open cardboard box",
+			"On garbage collection day, set out 2 feet away from garbage bin",
+			"Or if item still works, think about donating it for reuse"
+		],
+		"image": "http://dummyimage.com/200.png/aa44ff/ff00ff",
+		"card_color": "#fff8e8",
+		"text_color": "#875b0f",
+		"dontSteps": [
+			"Put it out for collection in bad weather",
+			"Put in regular household garbage, recycling or green bin"
+		],
+		"reasons": [
+			"Harmful toxins leach into the soil and contaminate groundwater",
+			"The accumulation of pollutants in the body cause cancer and damage to DNA",
+			"Made with nonbiodegradable materials so they will not decompose",
+			"Toxic chemicals released into the air"
+		]
+	},
+	{
+		"id": "2",
+		"title": "Oil",
+		"doSteps": ["Leave oil to cool", "Put it in your organics / green bin"],
+		"card_color": "#70c470",
+		"text_color": "#003400",
+		"image": "http://dummyimage.com/200.png/pp44ff/ffffff",
+		"dontSteps": [
+			"Pour down sink or toilet",
+			"Pour on the ground",
+			"Put directly in your garbage"
+		],
+		"reasons": [
+			"Clogs sewer system of house or even neighborhood",
+			"Harmful and potentially toxic to animals",
+			"Destroys shorelines, natural habitats and wildlife food supplies",
+			"Interferes with water treatment facilities"
+		]
+	}
 ]

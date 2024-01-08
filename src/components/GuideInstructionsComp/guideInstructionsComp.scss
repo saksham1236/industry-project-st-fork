@@ -1,21 +1,36 @@
+@use "../../styles/partials/mixins" as *;
+
 .guide-inst {
-  display: flex;
-  flex-direction: row;
-  // box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
-  background-color: rgb(180, 246, 186);
-  border-radius: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0rem 0rem 0.75rem 0.75rem;
+	justify-content: center;
 
-  &__list {
-    display: flex;
-  flex-direction: column;
-    padding: 1rem;
-  }
+	@include tablet {
+		flex-direction: row;
+	}
 
-  &__image-container {
-    padding: 1rem;
-  }
+	&__list {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
 
-  &__image {
-    border-radius: 0.75rem;
-  }
+		@include tablet {
+			width: 25%;
+		}
+	}
+
+	&__image-container {
+		padding: 1rem;
+
+		margin: auto;
+
+		@include tablet {
+			margin: 0;
+		}
+	}
+
+	&__image {
+		border-radius: 0.75rem;
+	}
 }
