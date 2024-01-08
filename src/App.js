@@ -4,7 +4,6 @@ import Home from "./pages/HomePage/home";
 import Categories from "./pages/CategoriesPage/categories";
 import Guide from "./pages/GuidePage/GuidePage";
 import Navbar from "./components/Navbar/Navbar";
-// import SplineView from "./components/splineView/SplineView";
 import { useState } from "react";
 import About from "./pages/AboutPage/about";
 import Resources from "./pages/ResourcesPage/ResourcesPage";

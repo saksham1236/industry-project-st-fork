@@ -10,13 +10,13 @@ export default function CategoryCard(props) {
         </p>
         <div className="image--container">
           <div className="category__image">
-            <p className="image__text">{props.imageName}</p>
+            <p className="image__text">{props.imageOneName}</p>
           </div>
           <div className="category__image">
-            <p className="image__text">Batteries</p>
+            <p className="image__text">{props.imageTwoName}</p>
           </div>
           <div className="category__image">
-            <p className="image__text">Batteries</p>
+            <p className="image__text">{props.imageThreeName}</p>
           </div>
         </div>
       </div>

@@ -3,13 +3,17 @@ import testImage from "../../assets/images/batteries.png";
 import CategoryCard from "../../components/CategoryCard/categoryCard";
 
 export default function Categories({ searchQuery }) {
+
+	
 	const cardData = [
 		{
 			image_one: { testImage },
 			image_two: { testImage },
 			image_three: { testImage },
 			card_header: "Liquid",
-			image_name: "Batteries",
+			image_one_name: "Batteries",
+			image_two_name: "Batteries",
+			image_three_name: "Batteries",
 			card_color: "#29a6ff75",
 			text_color: "#00487b",
 			description:
@@ -20,7 +24,9 @@ export default function Categories({ searchQuery }) {
 			image_two: { testImage },
 			image_three: { testImage },
 			card_header: "Hazardous",
-			image_name: "Batteries",
+			image_one_name: "Batteries",
+			image_two_name: "Batteries",
+			image_three_name: "Batteries",
 			card_color: "#fff8e8",
 			text_color: "#875b0f",
 			description:
@@ -31,7 +37,9 @@ export default function Categories({ searchQuery }) {
 			image_two: { testImage },
 			image_three: { testImage },
 			card_header: "Organic",
-			image_name: "Batteries",
+			image_one_name: "Batteries",
+			image_two_name: "Batteries",
+			image_three_name: "Batteries",
 			card_color: "#60bd6066",
 			text_color: "#003400",
 			description:
@@ -42,7 +50,9 @@ export default function Categories({ searchQuery }) {
 			image_two: { testImage },
 			image_three: { testImage },
 			card_header: "Recyclable",
-			image_name: "Batteries",
+			image_one_name: "Batteries",
+			image_two_name: "Batteries",
+			image_three_name: "Batteries",
 			card_color: "#2265FF",
 			text_color: "#002A8C",
 			description:
@@ -53,11 +63,13 @@ export default function Categories({ searchQuery }) {
 			image_two: { testImage },
 			image_three: { testImage },
 			card_header: "Solid",
-			image_name: "Batteries",
+			image_one_name: "Batteries",
+			image_two_name: "Batteries",
+			image_three_name: "Batteries",
 			card_color: "#cbcaca",
 			text_color: "#686868",
 			description:
-				"Solid waste is any garbage, sludge, and refuse found in industrial and commercial locations. The five major types of solid rubbish are;",
+				"Solid waste is any garbage, sludge, and refuse found in industrial and commercial locations. The five major types of solid rubbish are",
 		},
 	];
 
@@ -73,6 +85,9 @@ export default function Categories({ searchQuery }) {
 						imageOne={data.image_one}
 						imageTwo={data.image_two}
 						imageThree={data.image_three}
+						imageOneName={data.image_one_name}
+						imageTwoName={data.image_two_name}
+						imageThreeName={data.image_three_name}
 						cardHeader={data.card_header}
 						imageName={data.image_name}
 						description={data.description}
