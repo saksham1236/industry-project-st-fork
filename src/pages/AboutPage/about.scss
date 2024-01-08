@@ -6,6 +6,7 @@
     background-color: #DBE7C8;
     border-radius: 2rem;
     padding-bottom: 10rem;
+    border: 2px solid rgba(0, 0, 0, 0.1);
     .about__intro {
         @include mobile {
             font-size: 1.5rem;
