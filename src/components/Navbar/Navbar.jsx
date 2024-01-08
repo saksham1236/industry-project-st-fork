@@ -64,7 +64,6 @@ export default function Navbar(props) {
 	const searchFormHandler = (e) => {
 		e.preventDefault();
 		e.stopPropagation();
-		alert(query);
 		setQuery("");
 		setSearchResult([]);
 		props.setSearchQuery("");
