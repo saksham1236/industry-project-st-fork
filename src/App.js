@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import SplineView from "./components/splineView/SplineView";
 import { useState } from "react";
 import About from "./pages/AboutPage/about";
+import Resources from "./pages/ResourcesPage/ResourcesPage";
 
 function App() {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -25,6 +26,7 @@ function App() {
 							element={<Categories searchQuery={searchQuery} />}></Route>
 						<Route path="/categories/:id/guide" element={<Guide />}></Route>
 						<Route path="/about" element={<About />}></Route>
+						<Route path="/resources" element={<Resources />}></Route>
 					</Routes>
 				</div>
 			</BrowserRouter>
