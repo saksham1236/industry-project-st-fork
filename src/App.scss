@@ -1,0 +1,44 @@
+@use "./styles/partials/mixins" as *;
+@use "./styles/partials/font" as *;
+@use "./styles/partials/variables" as *;
+
+// removing/replacing default styling
+* {
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+
+	&:visited,
+	&:link {
+		color: inherit;
+	}
+}
+
+textarea {
+	overflow: hidden;
+	resize: none;
+}
+
+.content {
+	padding: 1rem 1rem 0rem;
+
+	@include tablet {
+		padding: 2.25rem 2.25rem 0rem;
+	}
+
+	@include desktop {
+		padding: 2.25rem 8rem 0rem;
+	}
+}
+
+body {
+	margin-top: 5.75rem;
+}

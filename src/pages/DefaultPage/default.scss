@@ -1,0 +1,42 @@
+@use "../../styles/partials/mixins" as *;
+
+.default {
+	display: flex;
+	flex-direction: column;
+	border-radius: 1.5rem;
+	background-color: #dbe7c8;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	margin: 8rem 1rem 0rem;
+	padding-bottom: 4rem;
+
+	@include tablet {
+		padding: 2.25rem 2.25rem 4rem;
+	}
+
+	@include desktop {
+		margin: 8rem 8rem 0rem;
+	}
+
+	&__text {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+		padding: 2rem 1rem 0 1rem;
+		font-weight: 600;
+
+		@include tablet {
+			@include d-h1;
+			padding: 1rem 6rem;
+			
+		}
+	}
+
+	&__link {
+		color: rgb(26, 141, 26);
+		font-weight: bold;
+		display: contents;
+
+		&:visited {
+			color: rgb(26, 141, 26);
+		}
+	}
+}

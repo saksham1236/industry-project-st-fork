@@ -1,0 +1,56 @@
+@use "../../styles/partials/mixins" as *;
+
+.resources-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 400px;
+	gap: 1rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 1.5rem;
+	background-color: #dbe7c8;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	position: sticky;
+
+	&__title-container {
+		padding: 0.7rem;
+	}
+
+	&__title {
+		@include m-h2;
+
+		@include tablet {
+			@include d-h2;
+		}
+	}
+
+	&__image {
+		border-radius: 0.75rem;
+		width: 200px;
+
+		@include tablet {
+			width: 400px;
+		}
+	}
+
+	&__link {
+		@include m-p2;
+
+		@include tablet {
+			@include d-p2;
+		}
+		&:hover {
+			color: green;
+		}
+	}
+
+	&__description {
+		padding: 0.5rem 0;
+		@include m-p1;
+
+		@include tablet {
+			@include d-p1;
+		}
+	}
+}
