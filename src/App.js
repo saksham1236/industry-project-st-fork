@@ -8,6 +8,7 @@ import { useState } from "react";
 import About from "./pages/AboutPage/about";
 import Resources from "./pages/ResourcesPage/ResourcesPage";
 import Default from "./pages/DefaultPage/default";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -28,6 +29,7 @@ function App() {
 					<Route path="/resources" element={<Resources />}></Route>
 					<Route path="/default" element={<Default />}></Route>
 				</Routes>
+				<ScrollToTop />
 			</BrowserRouter>
 		</>
 	);
