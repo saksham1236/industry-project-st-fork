@@ -4,11 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   padding: 1.5rem 1.5rem 10rem 1.5rem;
 
   &__title {
-    padding: .5rem;
+    padding: .5rem 0 .5rem 2.5rem;
     @include m-h1;
 
     @include tablet {
@@ -22,12 +21,24 @@
 
   &__list-item {
     padding: 0.3rem 0.5rem;
+    display: flex;
+    align-items: center;
 
     @include m-p3;
 
     @include tablet {
       font-size: 1.5rem;
       line-height: 2rem;
+    }
+  }
+
+  &__icon {
+    margin-right: 1rem;
+
+    @include tablet {
+      margin-right: 2rem;
+      width: 35px;
+      height: 35px;
     }
   }
 }

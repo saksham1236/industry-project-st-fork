@@ -8,7 +8,7 @@
 			"On garbage collection day, set out 2 feet away from garbage bin",
 			"Or if item still works, think about donating it for reuse"
 		],
-		"image": "http://dummyimage.com/200.png/aa44ff/ff00ff",
+		"image": "/img/cell-phone.png",
 		"card_color": "#fff8e8",
 		"text_color": "#875b0f",
 		"listItemColor": "#f6ebd6",
@@ -19,32 +19,59 @@
 			"Put in regular household garbage, recycling or green bin"
 		],
 		"reasons": [
-			"Harmful toxins leach into the soil and contaminate groundwater",
-			"The accumulation of pollutants in the body cause cancer and damage to DNA",
-			"Made with nonbiodegradable materials so they will not decompose",
-			"Toxic chemicals released into the air"
+			{
+				"text": "Harmful toxins leach into the soil and contaminate groundwater",
+				"icon": "/list-icons/science_black_24dp.svg"
+			},
+			{
+				"text": "The accumulation of pollutants in the body cause cancer and damage to DNA",
+				"icon": "/list-icons/sick_black_24dp.svg"
+			},
+			{
+				"text": "Made with nonbiodegradable materials so they will not decompose",
+				"icon": "/list-icons/forest_black_24dp.svg"
+			},
+			{
+				"text": "Toxic chemicals released into the air",
+				"icon": "/list-icons/emoji_nature_black_24dp.svg"
+			}
 		]
 	},
 	{
 		"id": "2",
 		"title": "Cooking oil/grease",
-		"doSteps": ["Leave oil to cool", "Put it in your organics / green bin"],
+		"doSteps": [
+			"Leave oil to cool",
+			"Put it in your organics / green bin"
+		],
 		"card_color": "#70c470",
 		"text_color": "#003400",
 		"listItemColor": "#449f4482",
 		"bg": "../../img/background-organic.png",
 		"fg": "../../img/foreground-organic.png",
-		"image": "http://dummyimage.com/200.png/pp44ff/ffffff",
+		"image": "/img/grease.png",
 		"dontSteps": [
 			"Pour down sink or toilet",
 			"Pour on the ground",
 			"Put directly in your garbage"
 		],
 		"reasons": [
-			"Clogs sewer system of house or even neighborhood",
-			"Harmful and potentially toxic to animals",
-			"Destroys shorelines, natural habitats and wildlife food supplies",
-			"Interferes with water treatment facilities"
+			{
+				"text": "Clogs sewer system",
+				"icon": "/list-icons/water_drop_black_24dp.svg"
+			},
+			{
+				"text": "Harmful and potentially toxic to animals",
+				"icon": "/list-icons/cruelty_free_black_24dp.svg"
+			},
+			{
+				"text": "Destroys shorelines and wildlife habitats",
+				"icon": "/list-icons/filter_vintage_black_24dp.svg"
+			},
+			{
+				"text": "Interferes with water treatment facilities",
+				"icon": "/list-icons/factory_black_24dp.svg"
+			}
 		]
 	}
 ]
