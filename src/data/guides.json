@@ -8,7 +8,7 @@
 			"On garbage collection day, set out 2 feet away from garbage bin",
 			"Or if item still works, think about donating it for reuse"
 		],
-		"image": "http://dummyimage.com/200.png/aa44ff/ff00ff",
+		"image": "/img/cell-phone.png",
 		"card_color": "#fff8e8",
 		"text_color": "#875b0f",
 		"listItemColor": "#f6ebd6",
@@ -49,7 +49,7 @@
 		"listItemColor": "#449f4482",
 		"bg": "../../img/background-organic.png",
 		"fg": "../../img/foreground-organic.png",
-		"image": "http://dummyimage.com/200.png/pp44ff/ffffff",
+		"image": "/img/grease.png",
 		"dontSteps": [
 			"Pour down sink or toilet",
 			"Pour on the ground",

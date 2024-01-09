@@ -7,9 +7,9 @@
 		"description": "Liquid waste refers to all grease, oil, sludges, wash water, waste detergents and dirty water that have been thrown away. They are hazardous and poisonous to our environment and are found in industries as well as households. Wastewater, as it is often called, is any waste that exists in liquid form.",
 		"url": "",
 		"imageData": {
-			"image_one": "../img/batteries.png",
-			"image_two": "../img/batteries.png",
-			"image_three": "../img/batteries.png",
+			"image_one": "../img/chemicals.png",
+			"image_two": "../img/detergent.png",
+			"image_three": "../img/sewage.png",
 			"image_one_name": "Oil",
 			"image_two_name": "Waste detergents",
 			"image_three_name": "Sludge"
@@ -24,8 +24,8 @@
 		"url": "http://localhost:3000/categories/1/guide",
 		"imageData": {
 			"image_one": "../img/batteries.png",
-			"image_two": "../img/batteries.png",
-			"image_three": "../img/batteries.png",
+			"image_two": "../img/medical.png",
+			"image_three": "../img/cell-phone.png",
 			"image_one_name": "Batteries",
 			"image_two_name": "Medical waste",
 			"image_three_name": "Cellphone"
@@ -39,9 +39,9 @@
 		"description": "Organic waste refers to rotten meat, garden and food waste. This type of rubbish is commonly found in homes. With time, they decompose and turn into manure by the action of microorganisms on them. But be careful; you should not dispose of them anywhere you like.",
 		"url": "http://localhost:3000/categories/2/guide",
 		"imageData": {
-			"image_one": "../img/batteries.png",
-			"image_two": "../img/batteries.png",
-			"image_three": "../img/batteries.png",
+			"image_one": "../img/plant-waste.png",
+			"image_two": "../img/cardboard.png",
+			"image_three": "../img/grease.png",
 			"image_one_name": "Plant waste",
 			"image_two_name": "Cardboard",
 			"image_three_name": "Cooking oil/grease"
@@ -55,9 +55,9 @@
 		"description": "All discarded items like metals, furniture, organic waste that can be recycled fall under this category. Not all items are recyclable, so you have to be careful when putting things into the recycle bin. If you are not sure whether an item is recyclable or not, then check the item's packaging.",
 		"url": "",
 		"imageData": {
-			"image_one": "../img/batteries.png",
-			"image_two": "../img/batteries.png",
-			"image_three": "../img/batteries.png",
+			"image_one": "../img/plastics-pile.png",
+			"image_two": "../img/paper.png",
+			"image_three": "../img/metal-tin.png",
 			"image_one_name": "Plastics",
 			"image_two_name": "Paper",
 			"image_three_name": "Metal containers / Tins"
@@ -68,13 +68,13 @@
 		"card_header": "Solid",
 		"card_color": "#cbcaca",
 		"text_color": "#686868",
-		"description": "Solid waste is any garbage, sludge, and refuse found in industrial and commercial locations. The five major types of solid rubbish are",
+		"description": "Solid waste is any garbage, sludge, and refuse found in industrial and commercial locations. Three major types of solid rubbish are",
 		"url": "",
 		"imageData": {
-			"image_one": "../img/batteries.png",
-			"image_two": "../img/batteries.png",
-			"image_three": "../img/batteries.png",
-			"image_one_name": "Plastics",
+			"image_one": "../img/textiles.png",
+			"image_two": "../img/furniture.png",
+			"image_three": "../img/glass.png",
+			"image_one_name": "Textiles",
 			"image_two_name": "Furniture",
 			"image_three_name": "Glass"
 		}
