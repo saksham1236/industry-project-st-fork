@@ -53,7 +53,7 @@ export default function Navbar(props) {
 		},
 		{
 			id: "3",
-			name: "Plastics (recyclable)",
+			name: "Plastics",
 		},
 		{
 			id: "3",
@@ -65,7 +65,7 @@ export default function Navbar(props) {
 		},
 		{
 			id: "3",
-			name: "Plastics (solid)",
+			name: "Textiles",
 		},
 		{
 			id: "3",
@@ -73,7 +73,7 @@ export default function Navbar(props) {
 		},
 		{
 			id: "3",
-			name: "Glass (solid)",
+			name: "Glass",
 		},
 	];
 
