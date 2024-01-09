@@ -1,10 +1,11 @@
 [
 	{
+		"demo": "false",
 		"card_header": "Liquid",
-		"id": "2",
 		"card_color": "#29a6ff75",
 		"text_color": "#00487b",
 		"description": "Liquid waste refers to all grease, oil, sludges, wash water, waste detergents and dirty water that have been thrown away. They are hazardous and poisonous to our environment and are found in industries as well as households. Wastewater, as it is often called, is any waste that exists in liquid form.",
+		"url": "",
 		"imageData": {
 			"image_one": "../img/batteries.png",
 			"image_two": "../img/batteries.png",
@@ -15,8 +16,8 @@
 		}
 	},
 	{
+		"demo": "true",
 		"card_header": "Hazardous",
-		"id": "1",
 		"card_color": "#fff8e8",
 		"text_color": "#875b0f",
 		"description": "Hazardous waste disposal is essential for preventing environmental and health risks. Proper containment, treatment, and adherence to regulations ensure safe and responsible management of these materials.",
@@ -31,6 +32,7 @@
 		}
 	},
 	{
+		"demo": "false",
 		"card_header": "Organic",
 		"card_color": "#60bd6066",
 		"text_color": "#003400",
@@ -41,15 +43,17 @@
 			"image_two": "../img/batteries.png",
 			"image_three": "../img/batteries.png",
 			"image_one_name": "Plant waste",
-			"image_two_name": "Cooking oil/grease",
-			"image_three_name": "Cardboard"
+			"image_two_name": "Cardboard",
+			"image_three_name": "Cooking oil/grease"
 		}
 	},
 	{
+		"demo": "false",
 		"card_header": "Recyclable",
 		"card_color": "#2265FF",
 		"text_color": "#002A8C",
 		"description": "All discarded items like metals, furniture, organic waste that can be recycled fall under this category. Not all items are recyclable, so you have to be careful when putting things into the recycle bin. If you are not sure whether an item is recyclable or not, then check the item's packaging.",
+		"url": "",
 		"imageData": {
 			"image_one": "../img/batteries.png",
 			"image_two": "../img/batteries.png",
@@ -60,10 +64,12 @@
 		}
 	},
 	{
+		"demo": "false",
 		"card_header": "Solid",
 		"card_color": "#cbcaca",
 		"text_color": "#686868",
 		"description": "Solid waste is any garbage, sludge, and refuse found in industrial and commercial locations. The five major types of solid rubbish are",
+		"url": "",
 		"imageData": {
 			"image_one": "../img/batteries.png",
 			"image_two": "../img/batteries.png",
