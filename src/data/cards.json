@@ -47,7 +47,7 @@
 	},
 	{
 		"card_header": "Recyclable",
-		"card_color": "#2265FF",
+		"card_color": "#1b6ef5e6",
 		"text_color": "#002A8C",
 		"description": "All discarded items like metals, furniture, organic waste that can be recycled fall under this category. Not all items are recyclable, so you have to be careful when putting things into the recycle bin. If you are not sure whether an item is recyclable or not, then check the item's packaging.",
 		"imageData": {
