@@ -15,6 +15,7 @@ export default function Guide() {
 				backgroundURL={filterData[0].bg}
 				foregroundURL={filterData[0].fg}
 				title={filterData[0].title}
+				textColor={filterData[0].text_color}
 			/>
 			<GuideInstructionsComp data={filterData[0]} />
 			<GuideReasons data={filterData[0]} />
