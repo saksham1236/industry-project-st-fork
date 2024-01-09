@@ -37,7 +37,7 @@ function Resources() {
 
 	return (
 		<div className="resourcesPage">
-			{resourceData.map((data) => {
+			{resourceData.map((data, index) => {
 				return (
 					<>
 						<ResourcesCard
@@ -48,6 +48,7 @@ function Resources() {
 							cardColor={data.cardColor}
 							text_color={data.textColor}
 							description={data.description}
+							index={index}
 						/>
 					</>
 				);
