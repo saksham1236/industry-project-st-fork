@@ -1,9 +1,20 @@
 import "./searchResults.scss";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function SearchResults({ data, isCategories }) {
+function SearchResults({ data, isCategories, setSearchResult, setQuery }) {
+	const navigate = useNavigate();
 
-	const url = "http://localhost:3000/"
+	const clickHandler = (id) => {
+		if (id == 3) {
+			navigate("/");
+			setQuery("");
+			setSearchResult([]);
+		} else {
+			navigate(`categories/${id}/guide`);
+			setQuery("");
+			setSearchResult([]);
+		}
+	};
 
 	if (isCategories) {
 		return <></>;
@@ -12,9 +23,14 @@ function SearchResults({ data, isCategories }) {
 			<div className="search-results">
 				{data.map((result, index) => {
 					return (
-						<Link to={`${url}categories/${result.id}/guide`} key={index} className="search-results__item">
+						<div
+							onClick={() => {
+								clickHandler(result.id);
+							}}
+							key={index}
+							className="search-results__item">
 							{result.name}
-						 </Link>
+						</div>
 					);
 				})}
 			</div>
