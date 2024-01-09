@@ -1,7 +1,13 @@
 @use "../../styles/partials/mixins" as *;
 
 .resourcesPage {
+	margin-top: 20vh;
+	margin-bottom: 15vh;
 	padding: 1rem 1rem 0rem;
+
+	@include desktop {
+		margin-bottom: 35vh;
+	}
 
 	@include tablet {
 		padding: 2.25rem 2.25rem 0rem;
