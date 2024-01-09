@@ -36,7 +36,7 @@ function Resources() {
 	];
 
 	return (
-		<>
+		<div className="resourcesPage">
 			{resourceData.map((data) => {
 				return (
 					<>
@@ -52,7 +52,7 @@ function Resources() {
 					</>
 				);
 			})}
-		</>
+		</div>
 	);
 }
 

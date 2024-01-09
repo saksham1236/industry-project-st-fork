@@ -16,20 +16,18 @@ function App() {
 		<>
 			<BrowserRouter>
 				<Navbar setSearchQuery={setSearchQuery} />
-				<div className="content">
-					<Routes>
-						{/* Home Route */}
-						<Route path="/" element={<Home />}></Route>
-						{/* Categories Route */}
-						<Route
-							path="/categories"
-							element={<Categories searchQuery={searchQuery} />}></Route>
-						<Route path="/categories/:id/guide" element={<Guide />}></Route>
-						<Route path="/about" element={<About />}></Route>
-						<Route path="/resources" element={<Resources />}></Route>
-						<Route path="/default" element={<Default />}></Route>
-					</Routes>
-				</div>
+				<Routes>
+					{/* Home Route */}
+					<Route path="/" element={<Home />}></Route>
+					{/* Categories Route */}
+					<Route
+						path="/categories"
+						element={<Categories searchQuery={searchQuery} />}></Route>
+					<Route path="/categories/:id/guide" element={<Guide />}></Route>
+					<Route path="/about" element={<About />}></Route>
+					<Route path="/resources" element={<Resources />}></Route>
+					<Route path="/default" element={<Default />}></Route>
+				</Routes>
 			</BrowserRouter>
 		</>
 	);

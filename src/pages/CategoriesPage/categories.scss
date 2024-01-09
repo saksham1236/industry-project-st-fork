@@ -1,0 +1,13 @@
+@use "../../styles/partials/mixins" as *;
+
+.categoriesPage {
+	padding: 1rem 1rem 0rem;
+
+	@include tablet {
+		padding: 2.25rem 2.25rem 0rem;
+	}
+
+	@include desktop {
+		padding: 2.25rem 8rem 0rem;
+	}
+}

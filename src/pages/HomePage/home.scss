@@ -1,18 +1,24 @@
 @use "../../styles/partials/mixins" as *;
 
 .hero {
-    position: relative;
-    
-    @include tablet{
-        height: calc(100dvh - 130px);
-        overflow: hidden;
-    }
+	padding: 1rem 1rem 0rem;
 
+	position: relative;
+
+	@include tablet {
+		padding: 2.25rem 2.25rem 0rem;
+		height: calc(100dvh - 130px);
+		overflow: hidden;
+	}
+
+	@include desktop {
+		padding: 2.25rem 8rem 0rem;
+	}
 	&__background {
-        display: flex;
+		display: flex;
 		position: relative;
-        z-index: -1;
-        overflow: hidden;
+		z-index: -1;
+		overflow: hidden;
 
 		&__gradient {
 			position: absolute;
@@ -45,45 +51,45 @@
 				);
 		}
 
-        & canvas {
-            min-height: 300px;
-            max-height: 100dvh;
-        }
+		& canvas {
+			min-height: 300px;
+			max-height: 100dvh;
+		}
 	}
 
-    &__content{
-        position: absolute;
-        top: 80%;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
-        line-height: 150%;
-        & button {
-            width: fit-content;
-            width: -moz-fit-content;
-            -webkit-box-shadow: 15px 15px 36px 5px rgba(0,0,0,0.29); 
-            box-shadow: 15px 15px 36px 5px rgba(0,0,0,0.29);;
-        }
-        & h1, & p{
-            text-shadow: 6px 5px 24px rgba(0,0,0,0.2);
-        }
-        @include tablet{
-            position: absolute;
-            top: 35%;
-            bottom: 0;
-            left: 50%;
-            right: 0;
-            width: 50%;
-            height: 100%;
-            display: flex;
-            gap: 1rem;
-            flex-direction: column;
-            line-height: 150% !important;
-
-        }
-    }
+	&__content {
+		position: absolute;
+		top: 80%;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		gap: 1rem;
+		flex-direction: column;
+		line-height: 150%;
+		& button {
+			width: fit-content;
+			width: -moz-fit-content;
+			-webkit-box-shadow: 15px 15px 36px 5px rgba(0, 0, 0, 0.29);
+			box-shadow: 15px 15px 36px 5px rgba(0, 0, 0, 0.29);
+		}
+		& h1,
+		& p {
+			text-shadow: 6px 5px 24px rgba(0, 0, 0, 0.2);
+		}
+		@include tablet {
+			position: absolute;
+			top: 35%;
+			bottom: 0;
+			left: 50%;
+			right: 0;
+			width: 50%;
+			height: 100%;
+			display: flex;
+			gap: 1rem;
+			flex-direction: column;
+			line-height: 150% !important;
+		}
+	}
 }

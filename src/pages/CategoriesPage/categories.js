@@ -19,7 +19,7 @@ export default function Categories({ searchQuery }) {
 	});
 
 	return (
-		<>
+		<div className="categoriesPage">
 			{filteredData.map((data, index) => {
 				return (
 					<CategoryCard
@@ -39,6 +39,6 @@ export default function Categories({ searchQuery }) {
 					/>
 				);
 			})}
-		</>
+		</div>
 	);
 }
