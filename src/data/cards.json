@@ -20,6 +20,7 @@
 		"card_color": "#fff8e8",
 		"text_color": "#875b0f",
 		"description": "Hazardous waste disposal is essential for preventing environmental and health risks. Proper containment, treatment, and adherence to regulations ensure safe and responsible management of these materials.",
+		"url": "http://localhost:3000/categories/1/guide",
 		"imageData": {
 			"image_one": "../img/batteries.png",
 			"image_two": "../img/batteries.png",
@@ -34,12 +35,13 @@
 		"card_color": "#60bd6066",
 		"text_color": "#003400",
 		"description": "Organic waste refers to rotten meat, garden and food waste. This type of rubbish is commonly found in homes. With time, they decompose and turn into manure by the action of microorganisms on them. But be careful; you should not dispose of them anywhere you like.",
+		"url": "http://localhost:3000/categories/2/guide",
 		"imageData": {
 			"image_one": "../img/batteries.png",
 			"image_two": "../img/batteries.png",
 			"image_three": "../img/batteries.png",
 			"image_one_name": "Plant waste",
-			"image_two_name": "Food waste",
+			"image_two_name": "Cooking oil/grease",
 			"image_three_name": "Cardboard"
 		}
 	},
