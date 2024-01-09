@@ -28,51 +28,51 @@ export default function Navbar(props) {
 			name: "Sludge",
 		},
 		{
-			id: "4",
+			id: "3",
 			name: "Batteries",
 		},
 		{
-			id: "5",
+			id: "3",
 			name: "Medical waste",
 		},
 		{
-			id: "6",
+			id: "3",
 			name: "Oil",
 		},
 		{
-			id: "7",
+			id: "3",
 			name: "Plant waste",
 		},
 		{
-			id: "8",
+			id: "3",
 			name: "Waste detergents",
 		},
 		{
-			id: "9",
+			id: "3",
 			name: "Cardboard",
 		},
 		{
-			id: "10",
+			id: "3",
 			name: "Plastics (recyclable)",
 		},
 		{
-			id: "11",
+			id: "3",
 			name: "Paper",
 		},
 		{
-			id: "12",
+			id: "3",
 			name: "Metal containers / Tins",
 		},
 		{
-			id: "13",
+			id: "3",
 			name: "Plastics (solid)",
 		},
 		{
-			id: "14",
+			id: "3",
 			name: "Furniture",
 		},
 		{
-			id: "15",
+			id: "3",
 			name: "Glass (solid)",
 		},
 	];
@@ -120,7 +120,9 @@ export default function Navbar(props) {
 						<SplineLogo />
 					</div>
 					<div className="nav__logo__text">
-						<h1>Bin<br></br>There</h1>
+						<h1>
+							Bin<br></br>There
+						</h1>
 					</div>
 				</div>
 			</Link>
@@ -144,7 +146,12 @@ export default function Navbar(props) {
 									onChange={updateQuery}></input>
 							</div>
 						</form>
-						<SearchResults data={searchResult} isCategories={isCategories} />
+						<SearchResults
+							data={searchResult}
+							isCategories={isCategories}
+							setSearchResult={setSearchResult}
+							setQuery={setQuery}
+						/>
 					</search>
 				</div>
 
