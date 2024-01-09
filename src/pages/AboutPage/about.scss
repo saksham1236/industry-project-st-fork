@@ -9,18 +9,44 @@
     border: 2px solid rgba(0, 0, 0, 0.1);
     .about__intro {
         @include mobile {
+            font-size: 1rem;
+            line-height: 2.5rem;
+            padding: 10rem 3rem 0;
+        }
+        @include tablet {
             font-size: 1.5rem;
-            padding: 10rem 18rem 0 ;
+            padding: 10rem 8rem 0;
+        }
+        @include desktop {
+            padding: 10rem 16rem 0;
         }
     }
     .about__description {
         @include mobile {
+            font-size: 1rem;
+            line-height: 2.5rem;
+            padding: 2rem 3rem 0 ;
+        }
+        @include tablet {
             font-size: 1.5rem;
-            padding: 2rem 18rem 0 ;
+            padding: 2rem 8rem 0;
+        }
+        @include desktop {
+            padding: 2rem 16rem 0;
         }
     }
     .slogan {
-        font-size: 3rem;
-        padding: 2rem 18rem 0 ;
+        @include mobile {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 2rem 3rem 0 ;
+        }
+        @include tablet {
+            font-size: 3rem;
+            padding: 2rem 8rem 0;
+        }
+        @include desktop {
+            padding: 2rem 16rem 0;
+        }
     }
 }
