@@ -1,0 +1,22 @@
+@use "../../styles/partials/mixins" as *;
+
+.default {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    @include m-h1;
+
+    @include tablet {
+      @include d-h1;
+      padding: 1rem 6rem;
+    }
+  }
+
+  &__link {
+    color: revert-layer;
+    color: rgb(26, 141, 26);
+    font-weight: bold;
+  }
+}

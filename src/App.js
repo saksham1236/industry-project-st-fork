@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { useState } from "react";
 import About from "./pages/AboutPage/about";
 import Resources from "./pages/ResourcesPage/ResourcesPage";
+import Default from "./pages/DefaultPage/default";
 
 function App() {
 	const [searchQuery, setSearchQuery] = useState("");
@@ -26,6 +27,7 @@ function App() {
 						<Route path="/categories/:id/guide" element={<Guide />}></Route>
 						<Route path="/about" element={<About />}></Route>
 						<Route path="/resources" element={<Resources />}></Route>
+						<Route path="/default" element={<Default />}></Route>
 					</Routes>
 				</div>
 			</BrowserRouter>
