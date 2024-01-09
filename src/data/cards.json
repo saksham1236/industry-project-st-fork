@@ -32,7 +32,7 @@
 		}
 	},
 	{
-		"demo": "false",
+		"demo": "true",
 		"card_header": "Organic",
 		"card_color": "#60bd6066",
 		"text_color": "#003400",
