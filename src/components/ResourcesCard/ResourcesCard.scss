@@ -34,6 +34,9 @@
 		@include tablet {
 			@include d-p2;
 		}
+		&:hover {
+			color: green;
+		}
 	}
 
 	&__description {
