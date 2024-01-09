@@ -34,6 +34,7 @@ export default function Categories({ searchQuery }) {
 						description={data.description}
 						cardColor={data.card_color}
 						textColor={data.text_color}
+						url={data.url}
 					/>
 				);
 			})}

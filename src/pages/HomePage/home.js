@@ -14,13 +14,13 @@ export default function Home() {
 				</div>
 				<div className="hero__content">
 					<h1 className="hero__content__headline">
-						Your Ultimate Guide to Responsible Waste Handling!"
+						No time? No headspace? No prob.
 					</h1>
 					<p className="hero__content__paragraph">
-						Welcome to Waste Wise – your guide to responsible waste handling!
-						Explore sustainable living with practical tips and eco-friendly
-						solutions. Join us on the green path to make a positive impact, one
-						conscious decision at a time.
+						Your Quick and Easy Guide to Responsible Waste Disposal
+					</p>
+					<p className="hero__content__paragraph">
+						Make a world of difference
 					</p>
 					<Link to={"/categories"} className="link">
 						<Button label="Go to Categories" icon={categoryIcon} />
