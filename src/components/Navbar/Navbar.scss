@@ -6,7 +6,7 @@ nav,
 	position: fixed;
 	width: 100%;
 	z-index: 100;
-	background-color: rgba(0, 134, 0, 0.3);
+	background-color: rgb(255, 255, 255, 0.8);
 	top: 0;
 	@include mobile {
 		display: flex;
