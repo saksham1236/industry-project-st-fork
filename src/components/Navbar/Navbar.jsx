@@ -17,11 +17,11 @@ export default function Navbar(props) {
 	const cardData = [
 		{
 			id: "1",
-			name: "Oil",
+			name: "Cellphone",
 		},
 		{
 			id: "2",
-			name: "Waste detergents",
+			name: "Cooking oil/grease",
 		},
 		{
 			id: "3",
@@ -37,38 +37,38 @@ export default function Navbar(props) {
 		},
 		{
 			id: "6",
-			name: "Cellphone",
+			name: "Oil",
 		},
 		{
-			id: "8",
+			id: "7",
 			name: "Plant waste",
 		},
 		{
-			id: "9",
-			name: "Food waste",
+			id: "8",
+			name: "Waste detergents",
 		},
 		{
-			id: "10",
+			id: "9",
 			name: "Cardboard",
 		},
 		{
-			id: "11",
+			id: "10",
 			name: "Plastics (recyclable)",
 		},
 		{
-			id: "12",
+			id: "11",
 			name: "Paper",
 		},
 		{
-			id: "13",
+			id: "12",
 			name: "Metal containers / Tins",
 		},
 		{
-			id: "14",
+			id: "13",
 			name: "Plastics (solid)",
 		},
 		{
-			id: "15",
+			id: "14",
 			name: "Furniture",
 		},
 		{
