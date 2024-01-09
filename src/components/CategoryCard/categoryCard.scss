@@ -4,7 +4,6 @@
 	@include mobile {
 		text-align: center;
 		border-radius: 1.5rem;
-		background-color: #2020ffe3;
 		padding: 2rem;
 		margin-bottom: 2rem;
 		border: 2px solid rgb(0, 0, 0, 0.1);
@@ -13,11 +12,22 @@
 		@include mobile {
 			font-size: 2rem;
 			line-height: 2.5rem;
+			padding-bottom: 0.5rem;
+		}
+		@include tablet {
+			font-size: 3rem;
+			padding-bottom: 1.5rem;
 		}
 	}
 	.category__description {
 		@include mobile {
 			padding-bottom: 2rem;
+			line-height: 1.5rem;
+			font-size: 1rem;
+		}
+		@include tablet {
+			font-size: 1.5rem;
+			line-height: 2rem;
 		}
 	}
 	.image--container {
