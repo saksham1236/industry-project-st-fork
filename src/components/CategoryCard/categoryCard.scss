@@ -15,11 +15,20 @@
 			line-height: 2.5rem;
 			padding-bottom: 0.5rem;
 		}
+		@include tablet {
+			font-size: 3rem;
+			padding-bottom: 1.5rem;
+		}
 	}
 	.category__description {
 		@include mobile {
 			padding-bottom: 2rem;
 			line-height: 1.5rem;
+			font-size: 1rem;
+		}
+		@include tablet {
+			font-size: 1.5rem;
+			line-height: 2rem;
 		}
 	}
 	.image--container {
