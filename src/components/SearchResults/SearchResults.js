@@ -6,7 +6,7 @@ function SearchResults({ data, isCategories, setSearchResult, setQuery }) {
 
 	const clickHandler = (id) => {
 		if (id == 3) {
-			navigate("/");
+			navigate("/default");
 			setQuery("");
 			setSearchResult([]);
 		} else {
