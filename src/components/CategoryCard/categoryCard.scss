@@ -46,12 +46,7 @@
 		@include mobile {
 			width: 278px;
 			height: 277px;
-			background: linear-gradient(
-					180deg,
-					rgba(0, 17, 42, 0) 58.51%,
-					rgba(0, 22, 47, 0.75) 100%
-				),
-				lightgray 50% / cover no-repeat;
+			background: lightgray 50% / cover no-repeat;
 			background-size: cover;
 			border-radius: 1.5rem;
 			position: relative;
@@ -75,4 +70,9 @@
 			left: 1.5rem;
 		}
 	}
+}
+
+.category__image--link {
+	display: contents;
+	text-decoration: none;
 }
