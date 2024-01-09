@@ -13,11 +13,13 @@
 		@include mobile {
 			font-size: 2rem;
 			line-height: 2.5rem;
+			padding-bottom: 0.5rem;
 		}
 	}
 	.category__description {
 		@include mobile {
 			padding-bottom: 2rem;
+			line-height: 1.5rem;
 		}
 	}
 	.image--container {
