@@ -46,7 +46,7 @@ export default function CategoryCard(props) {
 					{props.description}
 				</p>
 				<div className="image--container">
-					<Link to={"/default"}>
+					<Link className="card__link" to={"/default"}>
 						<div
 							className="category__image"
 							style=
@@ -54,14 +54,14 @@ export default function CategoryCard(props) {
 							<p className="image__text">{props.imageNameOne}</p>
 						</div>
 					</Link>
-					<Link to={"/default"}>
+					<Link className="card__link" to={"/default"}>
 						<div
 							className="category__image"
 							style={gradientTwo}>
 							<p className="image__text">{props.imageNameTwo}</p>
 						</div>
 					</Link>
-					<Link to={demo === "true" ? props.url : "/default"}>
+					<Link className="card__link" to={demo === "true" ? props.url : "/default"}>
 						<div
 							className="category__image"
 							style={gradientThree}>
