@@ -14,6 +14,8 @@
     @include tablet {
       @include d-h1;
       padding-top: 2rem;
+      font-size: 7rem;
+      padding-bottom: 4rem;
     }
   }
 
@@ -23,7 +25,8 @@
     @include m-p3;
 
     @include tablet {
-      @include m-p2;
+      font-size: 1.5rem;
+      line-height: 2rem;
     }
   }
 }
