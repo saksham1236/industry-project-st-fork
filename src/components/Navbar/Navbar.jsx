@@ -120,7 +120,7 @@ export default function Navbar(props) {
 						<SplineLogo />
 					</div>
 					<div className="nav__logo__text">
-						<h1>RE-cycle</h1>
+						<h1>Bin<br></br>There</h1>
 					</div>
 				</div>
 			</Link>

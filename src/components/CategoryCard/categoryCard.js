@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export default function CategoryCard(props) {
 	return (
 		<>
-			{/* only addition to page is <Link> </Link> */}
 			<Link to={props.url}>
 				<div
 					className="category--card"

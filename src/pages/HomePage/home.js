@@ -14,7 +14,7 @@ export default function Home() {
 				</div>
 				<div className="hero__content">
 					<h1 className="hero__content__headline">
-					No time? No headspace? No prob.
+						No time? No headspace? No prob.
 					</h1>
 					<p className="hero__content__paragraph">
 						Your Quick and Easy Guide to Responsible Waste Disposal

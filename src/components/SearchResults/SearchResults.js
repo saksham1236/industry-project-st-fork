@@ -12,11 +12,9 @@ function SearchResults({ data, isCategories }) {
 			<div className="search-results">
 				{data.map((result, index) => {
 					return (
-						// <div key={index} className="search-results__item">
 						<Link to={`${url}categories/${result.id}/guide`} key={index} className="search-results__item">
 							{result.name}
 						 </Link>
-						// </div>
 					);
 				})}
 			</div>
