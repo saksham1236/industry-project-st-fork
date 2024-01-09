@@ -3,11 +3,11 @@
 .guide-inst {
 	display: flex;
 	flex-direction: column;
-	padding: 0 1.5rem;
 	justify-content: center;
 
 	@include tablet {
 		flex-direction: row;
+		justify-content: space-around;
 	}
 
 	&__list {
@@ -26,11 +26,16 @@
 
 		@include tablet {
 			margin: 0;
-			padding: .5rem 1rem;
+			padding: 4.5rem 2rem 2rem 2rem;
+	
 		}
 	}
 
 	&__image {
-		border-radius: 0.75rem;
+		border-radius: 1.5rem;
+		height: 277px;
+		width: 100%;
+		max-width: 278px;
+		min-width: 150px;
 	}
 }
