@@ -1,6 +1,6 @@
 import "./Navbar.scss";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useRef, useEffect } from "react";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 import SearchResults from "../SearchResults/SearchResults";
 import SplineLogo from "../SplineLogo/SplineView";
@@ -12,6 +12,8 @@ import { ReactSVG } from "react-svg";
 import Sidebar from "../Sidebar/Sidebar";
 
 export default function Navbar(props) {
+	const navigate = useNavigate();
+	const ref = useRef();
 	const { links } = props;
 
 	const cardData = [
@@ -104,9 +106,34 @@ export default function Navbar(props) {
 		searchData(text);
 	};
 
+	const checkQuery = () => {
+		if (query.toLocaleLowerCase().includes("cell")) {
+			navigate("/categories/1/guide");
+		} else if (query.toLocaleLowerCase().includes("cook")) {
+			navigate("/categories/2/guide");
+		} else {
+			navigate("/default");
+		}
+	};
+
+	useEffect(() => {
+		document.addEventListener("mousedown", handleOutsideClick);
+		return () => {
+			document.removeEventListener("mousedown", handleOutsideClick);
+		};
+	});
+
+	const handleOutsideClick = (e) => {
+		if (ref.current && !ref.current.contains(e.target)) {
+			setSearchResult([]);
+		}
+	};
 	const searchFormHandler = (e) => {
 		e.preventDefault();
 		e.stopPropagation();
+
+		checkQuery();
+
 		setQuery("");
 		setSearchResult([]);
 		props.setSearchQuery("");
@@ -127,7 +154,7 @@ export default function Navbar(props) {
 				</div>
 			</Link>
 			<div className="nav-big">
-				<div className="nav__search">
+				<div className="nav__search" ref={ref}>
 					<search className="nav__search__outer">
 						<form className="nav__search__form" onSubmit={searchFormHandler}>
 							<div className="nav__search__container">
