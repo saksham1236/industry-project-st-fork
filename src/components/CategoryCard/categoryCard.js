@@ -4,31 +4,30 @@ import { Link } from "react-router-dom";
 export default function CategoryCard(props) {
 	const demo = props.demo;
 
-
 	const gradientOne = {
 		backgroundImage: `linear-gradient(
 			180deg,
 			rgba(0, 17, 42, 0) 58.51%,
 			rgba(0, 22, 47, 0.75) 100%
 		),
-		 url("${props.imageOne}")`
-	}
+		 url("${props.imageOne}")`,
+	};
 	const gradientTwo = {
 		backgroundImage: `linear-gradient(
 			180deg,
 			rgba(0, 17, 42, 0) 58.51%,
 			rgba(0, 22, 47, 0.75) 100%
 		),
-		 url("${props.imageTwo}")`
-	}
+		 url("${props.imageTwo}")`,
+	};
 	const gradientThree = {
 		backgroundImage: `linear-gradient(
 			180deg,
 			rgba(0, 17, 42, 0) 58.51%,
 			rgba(0, 22, 47, 0.75) 100%
 		),
-		 url("${props.imageThree}")`
-	}
+		 url("${props.imageThree}")`,
+	};
 
 	return (
 		<>
@@ -47,24 +46,19 @@ export default function CategoryCard(props) {
 				</p>
 				<div className="image--container">
 					<Link className="card__link" to={"/default"}>
-						<div
-							className="category__image"
-							style=
-								{gradientOne}>
+						<div className="category__image" style={gradientOne}>
 							<p className="image__text">{props.imageNameOne}</p>
 						</div>
 					</Link>
 					<Link className="card__link" to={"/default"}>
-						<div
-							className="category__image"
-							style={gradientTwo}>
+						<div className="category__image" style={gradientTwo}>
 							<p className="image__text">{props.imageNameTwo}</p>
 						</div>
 					</Link>
-					<Link className="card__link" to={demo === "true" ? props.url : "/default"}>
-						<div
-							className="category__image"
-							style={gradientThree}>
+					<Link
+						className="card__link"
+						to={demo === "true" ? props.url : "/default"}>
+						<div className="category__image" style={gradientThree}>
 							<p className="image__text">{props.imageNameThree}</p>
 						</div>
 					</Link>
