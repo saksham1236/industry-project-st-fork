@@ -22,7 +22,7 @@ export default function Home() {
 					<p className="hero__content__paragraph">
 						Make a world of difference
 					</p>
-					<Link to={"/categories"} className="link">
+					<Link to={"/categories"} className="categories__link">
 						<Button label="Go to Categories" icon={categoryIcon} />
 					</Link>
 				</div>
