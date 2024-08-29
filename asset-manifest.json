@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/industry-project-st-fork/static/css/main.2eac52f7.css",
+    "main.js": "/industry-project-st-fork/static/js/main.2ad08ae3.js",
+    "static/js/408.ea67f989.chunk.js": "/industry-project-st-fork/static/js/408.ea67f989.chunk.js",
+    "static/js/773.ce5d7f03.chunk.js": "/industry-project-st-fork/static/js/773.ce5d7f03.chunk.js",
+    "static/js/565.e5d60a8c.chunk.js": "/industry-project-st-fork/static/js/565.e5d60a8c.chunk.js",
+    "static/js/124.87b6e63d.chunk.js": "/industry-project-st-fork/static/js/124.87b6e63d.chunk.js",
+    "static/js/303.a591b378.chunk.js": "/industry-project-st-fork/static/js/303.a591b378.chunk.js",
+    "static/js/722.6f2c079e.chunk.js": "/industry-project-st-fork/static/js/722.6f2c079e.chunk.js",
+    "static/js/160.584fbb3a.chunk.js": "/industry-project-st-fork/static/js/160.584fbb3a.chunk.js",
+    "static/js/215.1e87f74a.chunk.js": "/industry-project-st-fork/static/js/215.1e87f74a.chunk.js",
+    "static/js/367.649ec86e.chunk.js": "/industry-project-st-fork/static/js/367.649ec86e.chunk.js",
+    "static/media/crowdsource_FILL0_wght400_GRAD0_opsz24.svg": "/industry-project-st-fork/static/media/crowdsource_FILL0_wght400_GRAD0_opsz24.5c26ec9da0c8909d1aec3a84060ecc55.svg",
+    "index.html": "/industry-project-st-fork/index.html",
+    "static/media/help_FILL0_wght400_GRAD0_opsz24.svg": "/industry-project-st-fork/static/media/help_FILL0_wght400_GRAD0_opsz24.7e4646ab2e010f2b6c614a1fb01da18e.svg",
+    "static/media/category_FILL0_wght400_GRAD0_opsz24.svg": "/industry-project-st-fork/static/media/category_FILL0_wght400_GRAD0_opsz24.a394dcb34fe40cd3cb4483c2abb2d00a.svg",
+    "static/media/search_FILL0_wght400_GRAD0_opsz24.svg": "/industry-project-st-fork/static/media/search_FILL0_wght400_GRAD0_opsz24.82d3481840537f55a197ec3b7d2e44f5.svg",
+    "static/media/x-icon.svg": "/industry-project-st-fork/static/media/x-icon.13ee5ad9064e7dcf7aa3f3c8c3f3c015.svg",
+    "static/media/checkmark.svg": "/industry-project-st-fork/static/media/checkmark.88a4a6780dadb9318d841af5ecef73b4.svg",
+    "static/media/close_FILL0_wght400_GRAD0_opsz24.svg": "/industry-project-st-fork/static/media/close_FILL0_wght400_GRAD0_opsz24.1ded1e99216871d2a3aec0714440eb62.svg",
+    "static/media/menu_FILL0_wght400_GRAD0_opsz24.svg": "/industry-project-st-fork/static/media/menu_FILL0_wght400_GRAD0_opsz24.0d3c31af19b9c297e9457042ec495ba1.svg",
+    "main.2eac52f7.css.map": "/industry-project-st-fork/static/css/main.2eac52f7.css.map",
+    "main.2ad08ae3.js.map": "/industry-project-st-fork/static/js/main.2ad08ae3.js.map",
+    "408.ea67f989.chunk.js.map": "/industry-project-st-fork/static/js/408.ea67f989.chunk.js.map",
+    "773.ce5d7f03.chunk.js.map": "/industry-project-st-fork/static/js/773.ce5d7f03.chunk.js.map",
+    "565.e5d60a8c.chunk.js.map": "/industry-project-st-fork/static/js/565.e5d60a8c.chunk.js.map",
+    "124.87b6e63d.chunk.js.map": "/industry-project-st-fork/static/js/124.87b6e63d.chunk.js.map",
+    "303.a591b378.chunk.js.map": "/industry-project-st-fork/static/js/303.a591b378.chunk.js.map",
+    "722.6f2c079e.chunk.js.map": "/industry-project-st-fork/static/js/722.6f2c079e.chunk.js.map",
+    "160.584fbb3a.chunk.js.map": "/industry-project-st-fork/static/js/160.584fbb3a.chunk.js.map",
+    "215.1e87f74a.chunk.js.map": "/industry-project-st-fork/static/js/215.1e87f74a.chunk.js.map",
+    "367.649ec86e.chunk.js.map": "/industry-project-st-fork/static/js/367.649ec86e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2eac52f7.css",
+    "static/js/main.2ad08ae3.js"
+  ]
+}
