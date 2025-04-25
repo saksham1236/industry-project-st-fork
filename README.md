@@ -1,4 +1,4 @@
-#BinThere
+# BinThere
 
 Welcome to Bin There!
 A web-based app designed to make waste disposal accessible and pleasant. Designed for those who want to do their part for the environment but don’t have the time, ability, or motivation to do so.
@@ -10,7 +10,7 @@ A web-based app designed to make waste disposal accessible and pleasant. Designe
 - App start-up
 - Links
 
-# Prerequisites
+## Prerequisites
 
 Before you begin, make sure you have the following installed on your computer:
 
